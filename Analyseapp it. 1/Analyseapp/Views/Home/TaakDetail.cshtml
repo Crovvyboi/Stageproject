@@ -1,0 +1,248 @@
+﻿@using Analyseapp.Models.ViewModels
+@using Analyseapp.Util
+@model TaakDetailViewModel
+@{
+}
+
+<div>
+    <a asp-action="TaakOverview">Terug naar overzicht</a>
+</div>
+<h1>Details taak</h1>
+
+<div>
+    <h4>@Model.taak.taakName</h4>
+    <hr />
+    <dl class="row">
+    </dl>
+</div>
+
+
+<div>
+    @if (Model.maintaakID != null)
+    {
+        <a class="dropdown-item" href="@Url.Action("TaakDetail", "Home", new {taakID = Model.maintaakID})">Back to parent taak</a>
+    }
+</div>
+
+<div class="btn-group">
+    @*
+    Datepicker
+    *@
+    @if (Model.uitvoertijden.Count > 0)
+    {
+        <button type="button" class="btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown"> @Model.taak.uitvoertijd.startDatum @Model.taak.uitvoertijd.startTijd </button>
+        <ul class="dropdown-menu">
+
+            @foreach (UitvoertijdModel item in Model.uitvoertijden)
+            {
+                if (item.startDatum.Equals(new DateOnly(0001, 1, 1)))
+                {
+                    <li>
+                        n/a
+                    </li>
+                }
+                else
+                {
+                    <li>
+                        <a class="dropdown-item" href="@Url.Action("TaakDetailsWithDate", "Home", new { date = item.startDatum, time = item.startTijd, taakname = Model.taak.taakName  }, null)"> @item.startDatum @item.startTijd</a>
+                    </li>
+                }
+            }
+        </ul>
+    }
+    else
+    {
+        <button type="button" class="btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown"> n/a </button>
+    }
+</div>
+
+<div class="btn-group">
+    @*
+    Subtests
+    *@
+    @if (Model.taak.subtaken.Count > 0)
+    {
+        <button type="button" class="btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown"> Subtaak </button>
+        <ul class="dropdown-menu">
+            @foreach (TaakModel item in Model.taak.subtaken)
+            {
+                <li>
+                    <a class="dropdown-item" href="@Url.Action("TaakDetail", "Home", new {taakID = item.taakID})">@item.taakName</a>
+                </li>
+            }
+
+        </ul>
+    }
+    else
+    {
+        <button type="button" class="btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown"> No subtests available </button>
+
+    }
+</div>
+
+<div>
+    @*
+    Data table 1
+    *@
+    <table class="table">
+        <thead>
+        <th scope="col">
+
+        </th>
+        </thead>
+        <tbody>
+            <tr>
+                <th scope="row">
+                    Taaknaam
+                </th>
+                <td>
+                    @Model.taak.taakName
+                </td>
+            </tr>
+            <tr>
+                <th scope="row">
+                    Programma
+                </th>
+                <td>
+                    @Model.taak.programma.programma (@Model.taak.programma.progVersie)
+                </td>
+            </tr>
+            <tr>
+                <th scope="row">
+                    Aantal keer uitgevoerd (laatste 7 dagen)
+                </th>
+                <td>
+                    @Model.uitvoertijden.Count()
+                </td>
+                @if (Model.trendKeerUitgevoerd > 0)
+                {
+                    <td class="table-success">+ @Model.trendKeerUitgevoerd</td>
+                }
+                else if (Model.trendKeerUitgevoerd < 0)
+                {
+                    <td class="table-danger">@Model.trendKeerUitgevoerd</td>
+                }
+                else
+                {
+                    <td class="table-warning">~ @Model.trendKeerUitgevoerd</td>
+                }
+            </tr>
+            <tr>
+                <th scope="row">
+                    Taakmessage
+                </th>
+                @if (Model.taak.taakMessageNature.Equals(TaakResultNature.Good))
+                {
+                    <td class="table-success">+ @Model.taak.taakMessage</td>
+                }
+                else if (Model.taak.taakMessageNature.Equals(TaakResultNature.Bad))
+                {
+                    <td class="table-danger">@Model.taak.taakMessage</td>
+                }
+                else
+                {
+                    <td class="table-warning">~ @Model.taak.taakMessage</td>
+                }
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+<div>
+    @*
+    Data table 2
+    *@
+    <table class="table">
+        <thead>
+        <th scope="col">
+
+        </th>
+        </thead>
+        <tbody>
+            <tr>
+                <th scope="row">
+                    Uitgevoerd op
+                </th>
+                @if (Model.taak.uitvoertijd.startDatum.Equals(new DateOnly(0001, 1, 1)) && Model.taak.uitvoertijd.startTijd.Equals(new TimeOnly(0, 0, 0)))
+                {
+                    <td>
+                        n/a
+                    </td>
+                }
+                else
+                {
+                    <td>
+                        @Model.taak.uitvoertijd.startDatum @Model.taak.uitvoertijd.startTijd
+                    </td>
+                }
+            </tr>
+            <tr>
+                <th scope="row">
+                    Beëindigd op
+                </th>
+                @if (Model.taak.uitvoertijd.eindDatum.Equals(new DateOnly(0001, 1, 1)) && Model.taak.uitvoertijd.eindTijd.Equals(new TimeOnly(0, 0, 0)))
+                {
+                    <td>
+                        n/a
+                    </td>
+                }
+                else
+                {
+                    <td>
+                        @Model.taak.uitvoertijd.eindDatum @Model.taak.uitvoertijd.eindTijd
+                    </td>
+                }
+            </tr>
+            <tr>
+                <th scope="row">
+                    Totale uitvoertijd
+                </th>
+                @if (Model.taak.uitvoertijd.totUitvoertijd.Equals(new TimeSpan(0, 0, 0)))
+                {
+                    <td>
+                        n/a
+                    </td>
+                }
+                else
+                {
+                    <td>
+                        @Model.taak.uitvoertijd.totUitvoertijd
+                    </td>
+                }
+            </tr>
+            <tr>
+                <th scope="row">
+                    Gemiddelde uitvoertijd (laatste 7 dagen)
+                </th>
+                <td>
+                    @Model.gemUitvoertijd
+                </td>
+
+                @if (Model.gemUitvoertijd.Subtract(Model.trendGemUitvoertijd).CompareTo(new TimeSpan(0, 0, 0)) > 0)
+                {
+                    <td class="table-danger">+ @Model.trendGemUitvoertijd</td>
+                }
+                else if (Model.gemUitvoertijd.Subtract(Model.trendGemUitvoertijd).CompareTo(new TimeSpan(0, 0, 0)) < 0)
+                {
+
+                    <td class="table-success">- @Model.trendGemUitvoertijd</td>
+                }
+                else if (Model.gemUitvoertijd.Subtract(Model.trendGemUitvoertijd).CompareTo(new TimeSpan(0, 0, 0)) == 0)
+                {
+                    <td class="table-warning">~ @Model.trendGemUitvoertijd</td>
+                }
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+
+<div>
+    <dl class="row">
+    </dl>
+    <hr />
+
+</div>
+
+
+

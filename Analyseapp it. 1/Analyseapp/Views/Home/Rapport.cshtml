@@ -1,0 +1,608 @@
+﻿@using Analyseapp.Models.ViewModels
+@using Analyseapp.Util
+@model RapportViewModel
+
+@{
+
+}
+<div>
+    <a asp-action="RapportOverview">Terug naar overzicht</a>
+</div>
+<h1>Rapport #@Model.rapport.rapportId </h1>
+
+
+<div>
+    <table class="table">
+        <thead>
+        </thead>
+        <tbody>
+            <tr>
+                <th scope="row">
+                    Rapport
+                </th>
+                <td>
+                    Rapport #@Model.rapport.rapportId
+                </td>
+            </tr>
+            <tr>
+                <th scope="row">
+                    Programma
+                </th>
+                <td>
+                    @Model.rapport.programma.programma (@Model.rapport.programma.progVersie)
+                </td>
+            </tr>
+            <tr>
+                <th scope="row">
+                    Is in development
+                </th>
+                <td>
+                    @if (Model.rapport.programma.isInDevelopment)
+                    {
+                        <div>Ja</div>
+                    }
+                    else
+                    {
+                        <div>Nee</div>
+                    }
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+<div>
+    <dl class="row">
+    </dl>
+    <hr />
+
+</div>
+
+<h1>Tests</h1>
+<div>
+    <table class="table">
+        <thead>
+        </thead>
+        <tbody>
+            <tr>
+                <th scope="row">
+                    Hoeveelheid tests uitgevoerd
+                </th>
+                <td>
+                    @Model.rapport.testKerenUitgevoerd
+                </td>
+                @if (Model.rapport.trend.testVerschilKerenUitgevoerd > 0)
+                {
+                    <td class="table-success">+ @Model.rapport.trend.testVerschilKerenUitgevoerd</td>
+                }
+                else if (Model.rapport.trend.testVerschilKerenUitgevoerd < 0)
+                {
+                    <td class="table-danger">@Model.rapport.trend.testVerschilKerenUitgevoerd</td>
+                }
+                else
+                {
+                    <td class="table-warning">~ @Model.rapport.trend.testVerschilKerenUitgevoerd</td>
+                }
+            </tr>
+            <tr>
+                <th scope="row">
+                    Slagingskans
+                </th>
+                <td>
+                    @Model.rapport.testSlagingskans %
+                </td>
+                @if (Model.rapport.trend.testVerschilSlagingskans > 0)
+                {
+                    <td class="table-success">+ @Model.rapport.trend.testVerschilSlagingskans %</td>
+                }
+                else if (Model.rapport.trend.testVerschilSlagingskans < 0)
+                {
+                    <td class="table-danger">@Model.rapport.trend.testVerschilSlagingskans %</td>
+                }
+                else
+                {
+                    <td class="table-warning">~ @Model.rapport.trend.testVerschilSlagingskans %</td>
+                }
+            </tr>
+            <tr>
+                <th scope="row">
+                    Gemiddelde uitvoertijd
+                </th>
+                <td>
+                    @Model.rapport.testGemUitvoertijd 
+                </td>
+                @if (Model.rapport.trend.testVerschilGemUitvoertijden.CompareTo(new TimeSpan(0, 0, 0)) > 0)
+                {
+                    <td class="table-danger">+ @Model.rapport.trend.testVerschilGemUitvoertijden</td>
+                }
+                else if (Model.rapport.trend.testVerschilGemUitvoertijden.CompareTo(new TimeSpan(0, 0, 0)) < 0)
+                {
+                    <td class="table-success">@Model.rapport.trend.testVerschilGemUitvoertijden</td>
+                }
+                else
+                {
+                    <td class="table-warning">~ @Model.rapport.trend.testVerschilGemUitvoertijden</td>
+                }
+            </tr>
+
+        </tbody>
+    </table>
+</div>
+@if (Model.testModels.Count > 0)
+{
+    <table class="table table-striped table-hover">
+        <thead>
+        <th scope="col">
+                @Html.DisplayNameFor(Model => Model.testModels[0].testNaam)
+        </th>
+        <th scope="col">
+                @Html.DisplayNameFor(Model => Model.testModels[0].testBeschrijving)
+        </th>
+        <th scope="col">
+                @Html.DisplayNameFor(Model => Model.testModels[0].slagingsUitkomst)
+        </th>
+        <th scope="col">
+            Uitgevoerd op
+        </th>
+        <th scope="col">
+            Totale uitvoertijd
+        </th>
+        </thead>
+        @foreach (TestModel item in Model.testModels)
+        {
+            <tr>
+                <th scope="row">
+                    @item.testNaam
+                </th>
+                <td>
+                    @item.testBeschrijving
+                </td>
+                @if (item.slagingsUitkomst.Equals(SlagingsUitkomst.Geslaagd))
+                {
+                    <td class="table-success">
+                        @item.slagingsUitkomst
+                    </td>
+                }
+                else if (item.slagingsUitkomst.Equals(SlagingsUitkomst.Gefaald))
+                {
+                    <td class="table-danger">
+                        @item.slagingsUitkomst
+                    </td>
+                }
+                else
+                {
+                    <td class="table-warning">
+                        @item.slagingsUitkomst
+                    </td>
+                }
+
+                @if (item.uitvoertijd.startDatum.Equals(new DateOnly(0001, 1, 1)))
+                {
+                    <td>
+                        n/a
+                    </td>
+                }
+                else
+                {
+                    <td>
+                        @item.uitvoertijd.startDatum
+                    </td>
+                }
+                <td>
+                    @item.uitvoertijd.totUitvoertijd
+                </td>
+
+            </tr>
+        }
+    </table>
+}
+
+
+<div>
+    <dl class="row">
+    </dl>
+    <hr />
+
+</div>
+
+<div>
+    <div style="height: 350px;" id="testTimeGraph"></div>
+</div>
+
+<div>
+    <dl class="row">
+    </dl>
+    <hr />
+
+</div>
+
+
+
+<div>
+    <div style="height: 350px;" id="natureGraph"></div>
+</div>
+
+<div>
+    <dl class="row">
+    </dl>
+    <hr />
+
+</div>
+
+
+<h1>Taken</h1>
+<div>
+    <table class="table">
+        <thead>
+        </thead>
+        <tbody>
+            <tr>
+                <th scope="row">
+                    Hoeveelheid taken uitgevoerd
+                </th>
+                <td>
+                    @Model.rapport.taakKerenUitgevoerd
+                </td>
+                @if (Model.rapport.trend.taakVerschilKerenUitgevoerd > 0)
+                {
+                    <td class="table-success">+ @Model.rapport.trend.taakVerschilKerenUitgevoerd</td>
+                }
+                else if (Model.rapport.trend.taakVerschilKerenUitgevoerd < 0)
+                {
+                    <td class="table-danger">@Model.rapport.trend.taakVerschilKerenUitgevoerd</td>
+                }
+                else
+                {
+                    <td class="table-warning">~ @Model.rapport.trend.taakVerschilKerenUitgevoerd</td>
+                }
+            </tr>
+            <tr>
+                <th scope="row">
+                    Gemiddelde uitvoertijd
+                </th>
+                <td>
+                    @Model.rapport.taakGemUitvoertijd
+                </td>
+                @if (Model.rapport.trend.taakVerschilGemUitvoertijden.CompareTo(new TimeSpan(0,0,0)) > 0)
+                {
+                    <td class="table-danger">+ @Model.rapport.trend.taakVerschilGemUitvoertijden</td>
+                }
+                else if (Model.rapport.trend.taakVerschilGemUitvoertijden.CompareTo(new TimeSpan(0, 0, 0)) < 0)
+                {
+                    <td class="table-success">@Model.rapport.trend.taakVerschilGemUitvoertijden</td>
+                }
+                else
+                {
+                    <td class="table-warning">~ @Model.rapport.trend.taakVerschilGemUitvoertijden</td>
+                }
+            </tr>
+        </tbody>
+    </table>
+</div>
+@if (Model.taakModels.Count > 0)
+{
+    <table class="table table-striped table-hover">
+        <thead>
+            <th scope="col">
+                @Html.DisplayNameFor(Model => Model.taakModels[0].taakName)
+            </th>
+            <th scope="col">
+                @Html.DisplayNameFor(Model => Model.taakModels[0].taakMessage)
+            </th>
+            <th scope="col">
+                Uitgevoerd op
+            </th>
+            <th scope="col">
+                Totale uitvoertijd
+            </th>
+        </thead>
+        <tbody>
+            @foreach (TaakModel item in Model.taakModels)
+            {
+                <tr>
+                    <th scope="row">
+                        @item.taakName
+                    </th>
+                    @if (item.taakMessageNature.Equals(TaakResultNature.Good))
+                    {
+                        <td class="table-success">
+                            @item.taakMessage
+                        </td>
+                    } else if(item.taakMessageNature.Equals(TaakResultNature.Bad))
+                    {
+                        <td class="table-danger">
+                            @item.taakMessage
+                        </td>
+                    } else
+                    {
+                        <td class="table-warning">
+                            @item.taakMessage
+                        </td>
+                    }
+                    <td>
+                        @item.uitvoertijd.startDatum
+                    </td>
+                    <td>
+                        @item.uitvoertijd.totUitvoertijd
+                    </td>
+                </tr>
+            }
+
+        </tbody>
+    </table>
+}
+
+
+<div>
+    <dl class="row">
+    </dl>
+    <hr />
+
+</div>
+
+<div>
+    <div style="height: 350px;" id="taakTimeGraph"></div>
+</div>
+
+<div>
+    <dl class="row">
+    </dl>
+    <hr />
+
+</div>
+
+<div>
+    <div style="height: 350px;" id="slagingGraph"></div>
+
+</div>
+
+<div>
+    <dl class="row">
+    </dl>
+    <hr />
+
+</div>
+
+
+
+<div>
+    <button>Genereer PDF</button>
+</div>
+
+<div>
+    <dl class="row">
+    </dl>
+    <hr />
+
+</div>
+
+
+<script type="text/javascript">
+    window.onload = function () {
+
+        var testUitkomsten = new CanvasJS.Chart("slagingGraph", {
+            animationEnabled: true,
+            title: {
+
+                text: "Uitkomsten"
+            },
+            axisY: {
+                minimum: 0
+            },
+            subtitles: [
+                { text: "van laatste taken" }
+            ],
+            data: [
+            {
+                dataPoints: [
+                { x: 1, y: @Model.taakModels.Where(x => x.taakMessageNature.Equals(TaakResultNature.Good)).Count(), label: "Goed", color: "#1cb827" },
+                { x: 2, y: @Model.taakModels.Where(x => x.taakMessageNature.Equals(TaakResultNature.Undetermined)).Count() +
+                    @Model.taakModels.Where(x => x.taakMessageNature.Equals(TaakResultNature.Bad)).Count() , label: "Onverwacht", color: "#b8311c"
+                        },
+                ]
+            }
+            ]
+        });
+        testUitkomsten.render();
+
+        var testUitkomsten2 = new CanvasJS.Chart("natureGraph", {
+            animationEnabled: true,
+            title: {
+
+                text: "Uitkomsten"
+            },
+            axisY: {
+                minimum: 0
+            },
+            subtitles: [
+                { text: "van laatsts tests" }
+            ],
+            data: [
+                {
+                    dataPoints: [
+                        { x: 1, y: @Model.testModels.Where(x => x.slagingsUitkomst.Equals(SlagingsUitkomst.Geslaagd)).Count(), label: "Geslaagd", color: "#1cb827" },
+                        { x: 2, y: @Model.testModels.Where(x => x.slagingsUitkomst.Equals(SlagingsUitkomst.Gefaald)).Count(), label: "Gefaald", color: "#b8311c" },
+                        { x: 3, y: @Model.testModels.Where(x => x.slagingsUitkomst.Equals(SlagingsUitkomst.Onverwachte_fout)).Count(), label: "Onverwacht probleem", color: "#b8b61c" },
+                    ]
+                }
+            ]
+        });
+        testUitkomsten2.render();
+
+        var testTime = new CanvasJS.Chart("testTimeGraph",
+            {
+
+                title: {
+                    text: "Uitvoertijden (in uren)"
+                },
+                subtitles: [
+                    { text: "van laatste 10 tests" }
+                ],
+                axisX: {
+                    title: "Datum"
+                },
+                data: [
+                    {
+                        type: "area",
+                        color: "#2f4e5c",
+
+                        dataPoints: [
+                            {
+                                x: new Date(
+                                    @Model.GetTestDateOnIndex(9).Year,
+                                    @Model.GetTestDateOnIndex(9).Month,
+                                    @Model.GetTestDateOnIndex(9).Day),
+                                y: @Model.GetTestUitvoertijdOnIndex(9) / 60 },
+                            { 
+                                x: new Date(
+                                    @Model.GetTestDateOnIndex(8).Year, 
+                                    @Model.GetTestDateOnIndex(8).Month, 
+                                    @Model.GetTestDateOnIndex(8).Day), 
+                                y: @Model.GetTestUitvoertijdOnIndex(8) / 60 },
+                                {
+                                x: new Date(
+                                    @Model.GetTestDateOnIndex(7).Year,
+                                    @Model.GetTestDateOnIndex(7).Month,
+                                    @Model.GetTestDateOnIndex(7).Day),
+                                y: @Model.GetTestUitvoertijdOnIndex(7) / 60 },
+                                {
+                                x: new Date(
+                                    @Model.GetTestDateOnIndex(6).Year,
+                                    @Model.GetTestDateOnIndex(6).Month,
+                                    @Model.GetTestDateOnIndex(6).Day),
+                                y: @Model.GetTestUitvoertijdOnIndex(6) / 60 },
+                                {
+                                x: new Date(
+                                    @Model.GetTestDateOnIndex(5).Year,
+                                    @Model.GetTestDateOnIndex(5).Month,
+                                    @Model.GetTestDateOnIndex(5).Day),
+                                y: @Model.GetTestUitvoertijdOnIndex(5) / 60 },
+                                {
+                                x: new Date(
+                                    @Model.GetTestDateOnIndex(4).Year,
+                                    @Model.GetTestDateOnIndex(4).Month,
+                                    @Model.GetTestDateOnIndex(4).Day),
+                                y: @Model.GetTestUitvoertijdOnIndex(4) / 60 },
+                                {
+                                x: new Date(
+                                    @Model.GetTestDateOnIndex(3).Year,
+                                    @Model.GetTestDateOnIndex(3).Month,
+                                    @Model.GetTestDateOnIndex(3).Day),
+                                y: @Model.GetTestUitvoertijdOnIndex(3) / 60 },
+                                {
+                                x: new Date(
+                                    @Model.GetTestDateOnIndex(2).Year,
+                                    @Model.GetTestDateOnIndex(2).Month,
+                                    @Model.GetTestDateOnIndex(2).Day),
+                                y: @Model.GetTestUitvoertijdOnIndex(2) / 60 },
+                                {
+                                x: new Date(
+                                    @Model.GetTestDateOnIndex(1).Year,
+                                    @Model.GetTestDateOnIndex(1).Month,
+                                    @Model.GetTestDateOnIndex(1).Day),
+                                y: @Model.GetTestUitvoertijdOnIndex(1) / 60 },
+                                {
+                                x: new Date(
+                                    @Model.GetTestDateOnIndex(0).Year,
+                                    @Model.GetTestDateOnIndex(0).Month,
+                                    @Model.GetTestDateOnIndex(0).Day),
+                                y: @Model.GetTestUitvoertijdOnIndex(0) / 60 },
+                        ]
+                    }
+                ]
+            });
+        testTime.render();
+
+        var taakTime = new CanvasJS.Chart("taakTimeGraph",
+            {
+
+                title: {
+                    text: "Uitvoertijden (in uren)"
+                }, 
+                subtitles: [
+                    { text: "van laatste 10 taken" }
+                ],
+                axisX: {
+                    title: "Datum"
+                },
+                data: [
+                    {
+                        type: "area",
+                        color: "#2f4e5c",
+
+                        dataPoints: [
+                            {
+                                x: new Date(
+                                    @Model.GetTaakDateOnIndex(9).Year,
+                                    @Model.GetTaakDateOnIndex(9).Month,
+                                    @Model.GetTaakDateOnIndex(9).Day),
+                                y: @Model.GetTaakUitvoertijdOnIndex(9) / 60 },
+                                {
+                                x: new Date(
+                                    @Model.GetTaakDateOnIndex(8).Year,
+                                    @Model.GetTaakDateOnIndex(8).Month,
+                                    @Model.GetTaakDateOnIndex(8).Day),
+                                y: @Model.GetTaakUitvoertijdOnIndex(8) / 60 },
+                                    {
+                                x: new Date(
+                                    @Model.GetTaakDateOnIndex(7).Year,
+                                    @Model.GetTaakDateOnIndex(7).Month,
+                                    @Model.GetTaakDateOnIndex(7).Day),
+                                y: @Model.GetTaakUitvoertijdOnIndex(7) / 60 },
+                                    {
+                                x: new Date(
+                                    @Model.GetTaakDateOnIndex(6).Year,
+                                    @Model.GetTaakDateOnIndex(6).Month,
+                                    @Model.GetTaakDateOnIndex(6).Day),
+                                y: @Model.GetTaakUitvoertijdOnIndex(6) / 60 },
+                                    {
+                                x: new Date(
+                                    @Model.GetTaakDateOnIndex(5).Year,
+                                    @Model.GetTaakDateOnIndex(5).Month,
+                                    @Model.GetTaakDateOnIndex(5).Day),
+                                y: @Model.GetTaakUitvoertijdOnIndex(5) / 60 },
+                                    {
+                                x: new Date(
+                                    @Model.GetTaakDateOnIndex(4).Year,
+                                    @Model.GetTaakDateOnIndex(4).Month,
+                                    @Model.GetTaakDateOnIndex(4).Day),
+                                y: @Model.GetTaakUitvoertijdOnIndex(4) / 60 },
+                                    {
+                                x: new Date(
+                                    @Model.GetTaakDateOnIndex(3).Year,
+                                    @Model.GetTaakDateOnIndex(3).Month,
+                                    @Model.GetTaakDateOnIndex(3).Day),
+                                y: @Model.GetTaakUitvoertijdOnIndex(3) / 60 },
+                                    {
+                                x: new Date(
+                                    @Model.GetTaakDateOnIndex(2).Year,
+                                    @Model.GetTaakDateOnIndex(2).Month,
+                                    @Model.GetTaakDateOnIndex(2).Day),
+                                y: @Model.GetTaakUitvoertijdOnIndex(2) / 60 },
+                                    {
+                                x: new Date(
+                                    @Model.GetTaakDateOnIndex(1).Year,
+                                    @Model.GetTaakDateOnIndex(1).Month,
+                                    @Model.GetTaakDateOnIndex(1).Day),
+                                y: @Model.GetTaakUitvoertijdOnIndex(1) / 60 },
+                                    {
+                                x: new Date(
+                                    @Model.GetTaakDateOnIndex(0).Year,
+                                    @Model.GetTaakDateOnIndex(0).Month,
+                                    @Model.GetTaakDateOnIndex(0).Day),
+                                y: @Model.GetTaakUitvoertijdOnIndex(0) / 60 },
+                            ]
+                    }
+                ]
+            });
+        taakTime.render();
+    };
+
+</script>
+
+@*
+    Charts:
+        https://scottplot.net/quickstart/api/
+        https://canvasjs.com/docs/charts/intro/installation/
+
+*@
