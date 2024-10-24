@@ -1,75 +1,3 @@
-# # lib used : https://pypi.org/project/csv-diff/
-#
-# # Still using local files for testing purposes
-# # Run by using 'cd {This file path}' & python .\testsuite_compare.py
-#
-# # Old file
-# file1name = "signaleringslijst"
-# file1path = "C:/Users/rik.smolders/Desktop/" + file1name + ".CSV"
-#
-# # New file
-# file2name = "signaleringslijst_diff1"
-# file2path = "C:/Users/rik.smolders/Desktop/" + file2name + ".CSV"
-#
-# def load_data_csv():
-#     from csv_diff import load_csv, compare
-#     diff = compare(
-#         load_csv(open(file1path), key="Persoon"),
-#         load_csv(open(file2path), key="Persoon")
-#     )
-#     return diff
-#
-# def create_diff_csv():
-#     # Write to csv
-#     import csv
-#     fieldnames = ['On key', 'On variable', 'Starting value', 'End value']
-#     rows = []
-#
-#     # Compile differences
-#     changed_entries = diff["changed"]
-#     for entry in changed_entries:
-#         on_variable = entry["changes"]
-#         for variablekeys in on_variable.keys():
-#             keyvalues = on_variable[variablekeys]
-#
-#             print(entry["key"], end=' | ')
-#             print(variablekeys, end=' | ')
-#             print(keyvalues[0], end=' -> ')
-#             print(keyvalues[1])
-#
-#             row = [entry["key"], variablekeys, keyvalues[0], keyvalues[1]]
-#             rows += [row]
-#
-#
-#
-#
-#     # Compile additions
-#     print(diff["added"])
-#     print(diff["columns_added"])
-#
-#     # Compile removals
-#     print(diff["removed"])
-#     print(diff["columns_removed"])
-#
-#     with open("C:/Users/rik.smolders/Desktop/resultfile_csv.csv", "w", newline="") as csvfile:
-#         writer = csv.writer(csvfile)
-#         writer.writerow(fieldnames)
-#
-#         # Write difference rows
-#         print(rows)
-#         writer.writerows(rows)
-#
-#
-# # Program ------------------------------------------------
-# diff = load_data_csv()
-#
-# # Write to json
-# import json
-# out_file = open("C:/Users/rik.smolders/Desktop/resfile.json", "w")
-# json.dump(diff, out_file, indent=6)
-# out_file.close()
-#
-# create_diff_csv()
 import csv
 import os
 import difflib
@@ -108,7 +36,8 @@ def find_files(target_dir) -> Set[str]:
     allowed_extensions = ['.csv', '.xml']
     return set([f for f in os.listdir(target_dir) if os.path.splitext(f)[1] in allowed_extensions])
 
-def convert_to_detail(file_lines_a, file_lines_b, det_file_content, dir_output):
+# ----------------------------------
+def convert_to_detail_string(file_lines_a, file_lines_b, det_file_content, dir_output):
     """"
         Convert diff string into a csv file
             Header is the name of the file its based off
@@ -131,15 +60,37 @@ def convert_to_detail(file_lines_a, file_lines_b, det_file_content, dir_output):
         split_head_a = header_a.split(',')
         split_head_b = header_b.split(',')
 
+
+
         # Find columns in a not in b
         for header in split_head_a:
             if header not in split_head_b:
                 removed_heads.append(header)
+                # Remove all values at index
+                index = split_head_a.index(header)
+                lines_a = []
+                for entry in file_lines_a:
+                    splitline = entry.split(',')
+                    splitline.pop(index)
+                    entry = ','.join(splitline)
+                    print(entry)
+                    lines_a += [entry]
+                file_lines_a = lines_a
 
         # Find columns in b not in a
         for header in split_head_b:
             if header not in split_head_a:
                 added_heads.append(header)
+                # Remove all values at index
+                index = split_head_b.index(header)
+                lines_b = []
+                for entry in file_lines_b:
+                    splitline = entry.split(',')
+                    splitline.pop(index)
+                    entry = ','.join(splitline)
+                    print(entry)
+                    lines_b += [entry]
+                file_lines_b = lines_b
     else:
         split_head_a = header_a.split(',')
         split_head_b = header_b.split(',')
@@ -180,12 +131,8 @@ def convert_to_detail(file_lines_a, file_lines_b, det_file_content, dir_output):
             if scrubbed_entry[1]:
                 entry = csv.reader([scrubbed_entry[1]], skipinitialspace=True)
                 entry = entry.__next__()
-                second_half = scrubbed_entry[1].split(',')
                 scrubbed_entry = [scrubbed_entry[0]] + entry
                 parsed_list += [scrubbed_entry]
-
-    if len(removed_heads) > 0:
-        parsed_list = parsed_list[2:]
 
     # Find specific differences
     while True:
@@ -197,16 +144,6 @@ def convert_to_detail(file_lines_a, file_lines_b, det_file_content, dir_output):
 
         if len(parsed_list) > 1:
             entry_b = parsed_list[1]
-
-            # If there are any removed or added heads, ignore them in this comparison
-            for removed in removed_heads:
-                if entry_a[0] == '-':
-                    entry_a.pop(split_head_a.index(removed) + 1)
-
-            # If there are any removed or added heads, ignore them in this comparison
-            for added in added_heads:
-                if entry_b[0] == '+':
-                    entry_b.pop(split_head_b.index(added))
 
             rest_a = entry_a[2:]
             rest_b = entry_b[2:]
@@ -256,7 +193,8 @@ def convert_to_detail(file_lines_a, file_lines_b, det_file_content, dir_output):
 
     export_to_csv(det_file_content, dir_output)
     return det_file_content
-
+# ----------------------------------
+# ----------------------------------
 def export_to_csv(det_file_content, dir_output):
     # Create export file for results
     if not os.path.isfile(dir_output + 'res_file.csv'):
@@ -293,11 +231,6 @@ def export_to_csv(det_file_content, dir_output):
         csv.writer(csvfile).writerow([splitstring[0] + ':', columns])
         det_file_content = det_file_content[1:]
 
-        # Write headers
-        fields = ['OnEntryID', 'OnColumn', 'ValueA', 'ValueB']
-        writer = csv.DictWriter(csvfile, fieldnames=fields)
-        writer.writeheader()
-
         # Write entries
         for entry in det_file_content:
             rows = entry.split(',')
@@ -307,14 +240,14 @@ def export_to_csv(det_file_content, dir_output):
     # Ensure partition
     with open(dir_output + 'res_file.csv', 'a', newline='') as csvfile:
         csv.writer(csvfile).writerows(['',''])
-
+# ----------------------------------
 
 def find_differences():
     args = parser.parse_args()
 
-    dir_a = 'C:/Users/rik.smolders/Desktop/env-a-files/'
-    dir_b = 'C:/Users/rik.smolders/Desktop/env-b-files/'
-    dir_output = 'C:/Users/rik.smolders/Desktop/output_files/'
+    dir_a = 'G:/Shule BS/Stage/env-a/'
+    dir_b = 'G:/Shule BS/Stage/env-b/'
+    dir_output = 'G:/Shule BS/Stage/output_dir/'
     differences_found = False
 
     # Create export folder if not exists
@@ -380,18 +313,23 @@ def find_differences():
                 create_export_file(f'{os.path.join(dir_output, file_name)}_b{file_ext}', file_b_content)
                 differences_found = True
 
+                # ----------------------------------
                 # Add to csv file if diff are found
                 # First add name of the file
                 det_file_content = file_name
                 det_file_content += '\n'
 
-                convert_to_detail(file_lines_a, file_lines_b, det_file_content, dir_output)
+                convert_to_detail_string(file_lines_a, file_lines_b, det_file_content, dir_output)
+                # ----------------------------------
+
                 print('End of comparison for this file')
 
 
 # Temp ------------------------------------------------------------------------
     # Send data to db
-    send_csv_to_db(dir_output, 'res_file.csv')
+    from testsuite_send_to_mongo import send_csv_to_mongo
+    send_csv_to_mongo(dir_output, 'res_file.csv')
+    # send_csv_to_db(dir_output, 'res_file.csv')
 
 # -----------------------------------------------------------------------------
 
