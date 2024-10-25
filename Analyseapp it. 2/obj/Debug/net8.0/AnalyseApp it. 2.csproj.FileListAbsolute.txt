@@ -1,0 +1,40 @@
+G:\Shule BS\Stage\Stageproject\AnalyseApp it. 2\bin\Debug\net8.0\appsettings.Development.json
+G:\Shule BS\Stage\Stageproject\AnalyseApp it. 2\bin\Debug\net8.0\appsettings.json
+G:\Shule BS\Stage\Stageproject\AnalyseApp it. 2\bin\Debug\net8.0\AnalyseApp it. 2.staticwebassets.runtime.json
+G:\Shule BS\Stage\Stageproject\AnalyseApp it. 2\bin\Debug\net8.0\AnalyseApp it. 2.exe
+G:\Shule BS\Stage\Stageproject\AnalyseApp it. 2\bin\Debug\net8.0\AnalyseApp it. 2.deps.json
+G:\Shule BS\Stage\Stageproject\AnalyseApp it. 2\bin\Debug\net8.0\AnalyseApp it. 2.runtimeconfig.json
+G:\Shule BS\Stage\Stageproject\AnalyseApp it. 2\bin\Debug\net8.0\AnalyseApp it. 2.dll
+G:\Shule BS\Stage\Stageproject\AnalyseApp it. 2\bin\Debug\net8.0\AnalyseApp it. 2.pdb
+G:\Shule BS\Stage\Stageproject\AnalyseApp it. 2\bin\Debug\net8.0\DnsClient.dll
+G:\Shule BS\Stage\Stageproject\AnalyseApp it. 2\bin\Debug\net8.0\MongoDB.Bson.dll
+G:\Shule BS\Stage\Stageproject\AnalyseApp it. 2\bin\Debug\net8.0\MongoDB.Driver.dll
+G:\Shule BS\Stage\Stageproject\AnalyseApp it. 2\bin\Debug\net8.0\SharpCompress.dll
+G:\Shule BS\Stage\Stageproject\AnalyseApp it. 2\bin\Debug\net8.0\Snappier.dll
+G:\Shule BS\Stage\Stageproject\AnalyseApp it. 2\bin\Debug\net8.0\ZstdSharp.dll
+G:\Shule BS\Stage\Stageproject\AnalyseApp it. 2\obj\Debug\net8.0\AnalyseApp it. 2.csproj.AssemblyReference.cache
+G:\Shule BS\Stage\Stageproject\AnalyseApp it. 2\obj\Debug\net8.0\AnalyseApp it. 2.GeneratedMSBuildEditorConfig.editorconfig
+G:\Shule BS\Stage\Stageproject\AnalyseApp it. 2\obj\Debug\net8.0\AnalyseApp it. 2.AssemblyInfoInputs.cache
+G:\Shule BS\Stage\Stageproject\AnalyseApp it. 2\obj\Debug\net8.0\AnalyseApp it. 2.AssemblyInfo.cs
+G:\Shule BS\Stage\Stageproject\AnalyseApp it. 2\obj\Debug\net8.0\AnalyseApp it. 2.csproj.CoreCompileInputs.cache
+G:\Shule BS\Stage\Stageproject\AnalyseApp it. 2\obj\Debug\net8.0\AnalyseApp it. 2.MvcApplicationPartsAssemblyInfo.cache
+G:\Shule BS\Stage\Stageproject\AnalyseApp it. 2\obj\Debug\net8.0\AnalyseApp it. 2.RazorAssemblyInfo.cache
+G:\Shule BS\Stage\Stageproject\AnalyseApp it. 2\obj\Debug\net8.0\AnalyseApp it. 2.RazorAssemblyInfo.cs
+G:\Shule BS\Stage\Stageproject\AnalyseApp it. 2\obj\Debug\net8.0\AnalyseApp it. 2.sourcelink.json
+G:\Shule BS\Stage\Stageproject\AnalyseApp it. 2\obj\Debug\net8.0\staticwebassets.build.json
+G:\Shule BS\Stage\Stageproject\AnalyseApp it. 2\obj\Debug\net8.0\staticwebassets.development.json
+G:\Shule BS\Stage\Stageproject\AnalyseApp it. 2\obj\Debug\net8.0\staticwebassets\msbuild.AnalyseApp it. 2.Microsoft.AspNetCore.StaticWebAssets.props
+G:\Shule BS\Stage\Stageproject\AnalyseApp it. 2\obj\Debug\net8.0\staticwebassets\msbuild.build.AnalyseApp it. 2.props
+G:\Shule BS\Stage\Stageproject\AnalyseApp it. 2\obj\Debug\net8.0\staticwebassets\msbuild.buildMultiTargeting.AnalyseApp it. 2.props
+G:\Shule BS\Stage\Stageproject\AnalyseApp it. 2\obj\Debug\net8.0\staticwebassets\msbuild.buildTransitive.AnalyseApp it. 2.props
+G:\Shule BS\Stage\Stageproject\AnalyseApp it. 2\obj\Debug\net8.0\staticwebassets.pack.json
+G:\Shule BS\Stage\Stageproject\AnalyseApp it. 2\obj\Debug\net8.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css
+G:\Shule BS\Stage\Stageproject\AnalyseApp it. 2\obj\Debug\net8.0\scopedcss\bundle\AnalyseApp it. 2.styles.css
+G:\Shule BS\Stage\Stageproject\AnalyseApp it. 2\obj\Debug\net8.0\scopedcss\projectbundle\AnalyseApp it. 2.bundle.scp.css
+G:\Shule BS\Stage\Stageproject\AnalyseApp it. 2\obj\Debug\net8.0\AnalyseA.158C541D.Up2Date
+G:\Shule BS\Stage\Stageproject\AnalyseApp it. 2\obj\Debug\net8.0\AnalyseApp it. 2.dll
+G:\Shule BS\Stage\Stageproject\AnalyseApp it. 2\obj\Debug\net8.0\refint\AnalyseApp it. 2.dll
+G:\Shule BS\Stage\Stageproject\AnalyseApp it. 2\obj\Debug\net8.0\AnalyseApp it. 2.pdb
+G:\Shule BS\Stage\Stageproject\AnalyseApp it. 2\obj\Debug\net8.0\AnalyseApp it. 2.genruntimeconfig.cache
+G:\Shule BS\Stage\Stageproject\AnalyseApp it. 2\obj\Debug\net8.0\ref\AnalyseApp it. 2.dll
+G:\Shule BS\Stage\Stageproject\AnalyseApp it. 2\bin\Debug\net8.0\Newtonsoft.Json.dll

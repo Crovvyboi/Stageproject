@@ -1,3 +1,4 @@
+using AnalyseApp_it._2.Data;
 using AnalyseApp_it._2.Models;
 using Microsoft.AspNetCore.Mvc;
 using System.Diagnostics;
@@ -15,6 +16,9 @@ namespace AnalyseApp_it._2.Controllers
 
         public IActionResult Index()
         {
+            DBHandler dBHandler = new DBHandler();
+            dBHandler.GetAllTaken();
+
             return View();
         }
 
