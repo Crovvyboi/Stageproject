@@ -5,14 +5,18 @@ using MongoDB.Bson.IO;
 using Newtonsoft.Json;
 using JsonConvert = Newtonsoft.Json.JsonConvert;
 using System.Text.Json.Nodes;
+using AnalyseApp_it._2.Models;
+using AnalyseApp_it._2.Data.DataModels;
+using AnalyseApp_it._2.IData;
 
 namespace AnalyseApp_it._2.Data
 {
-    public class DBHandler
+    public class DBHandler : IDBHandler
     {
 
-        public void GetAllTaken()
+        public List<TaakDMO> GetAllTaken()
         {
+            List<TaakDMO> taken = new List<TaakDMO>();
             
             // Replace the placeholder with your Atlas connection string
             const string connectionUri = "mongodb+srv://riksmolders:Mieper99-Mieper99@cluster0.z5tuv.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0";
@@ -51,6 +55,8 @@ namespace AnalyseApp_it._2.Data
                     Console.WriteLine(js);
 
                     // Get subtaak object
+                    List<SubtaakModel> subtaken = new List<SubtaakModel>();
+
                     JsonObject dataObj = (JsonObject)js.First(x => x.Key.Contains("diff_data")).Value;
                     JsonArray dataArray = (JsonArray)dataObj.First(x => x.Key.Contains("data")).Value;
 
@@ -60,6 +66,7 @@ namespace AnalyseApp_it._2.Data
                         string added_columns = (string)dataItem.First(x => x.Key.Contains("added_columns")).Value;
                         string removed_columns = (string)dataItem.First(x => x.Key.Contains("removed_columns")).Value;
 
+                        List<DiffModel> diffModels = new List<DiffModel>();
                         JsonArray diffArray = (JsonArray)dataItem.First(x => x.Key.Contains("found_diffs")).Value;
                         foreach (JsonObject diffObj in diffArray)
                         {
@@ -68,13 +75,20 @@ namespace AnalyseApp_it._2.Data
                             string valueA = (string)diffObj.First(x => x.Key.Contains("ValueA")).Value;
                             string valueB = (string)diffObj.First(x => x.Key.Contains("ValueB")).Value;
 
-                            Console.WriteLine(valueA + " -> " + valueB);
+                            diffModels.Add(new DiffModel(onEntryId, onColumn, valueA, valueB));
                         }
-                    }
-                }
 
+                        subtaken.Add(new SubtaakModel(overzicht, added_columns, removed_columns, diffModels));
+                    }
+
+                    taken.Add(new TaakDMO(id, dateTime, added_columns_count, removed_columns_count, changes_count, subtaken));
+                }
+                
             }
             catch (Exception ex) { Console.WriteLine(ex); }
+
+            return taken;
         }
+
     }
 }

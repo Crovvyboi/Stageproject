@@ -1,4 +1,6 @@
 using AnalyseApp_it._2.Data;
+using AnalyseApp_it._2.Data.DataModels;
+using AnalyseApp_it._2.IData;
 using AnalyseApp_it._2.Models;
 using Microsoft.AspNetCore.Mvc;
 using System.Diagnostics;
@@ -16,8 +18,16 @@ namespace AnalyseApp_it._2.Controllers
 
         public IActionResult Index()
         {
-            DBHandler dBHandler = new DBHandler();
-            dBHandler.GetAllTaken();
+            IDBHandler dBHandler = new DBHandler();
+            List<TaakDMO> taakDMOs = dBHandler.GetAllTaken();
+
+            List<TaakModel> taakModels = new List<TaakModel>();
+            foreach (TaakDMO item in taakDMOs)
+            {
+                taakModels.Add(new TaakModel(item));
+            }
+
+            Console.WriteLine("Collected Data!");
 
             return View();
         }
