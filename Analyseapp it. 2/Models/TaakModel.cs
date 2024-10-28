@@ -27,6 +27,11 @@ namespace AnalyseApp_it._2.Models
             this.subtaken = taakDMO.subtaken;
         }
 
+        public TaakModel()
+        {
+            
+        }
+
         public string GetDateTimeString()
         {
             return dateTime.ToString("dd MMM yyyy HH:mm:ss");

@@ -11,6 +11,8 @@ namespace AnalyseApp_it._2.Controllers
     {
         private readonly ILogger<HomeController> _logger;
 
+        private IDBHandler dBHandler = new DBHandler();
+
         public HomeController(ILogger<HomeController> logger)
         {
             _logger = logger;
@@ -18,7 +20,7 @@ namespace AnalyseApp_it._2.Controllers
 
         public IActionResult Index()
         {
-            IDBHandler dBHandler = new DBHandler();
+            
             List<TaakDMO> taakDMOs = dBHandler.GetAllTaken();
 
             List<TaakModel> taakModels = new List<TaakModel>();
@@ -32,11 +34,29 @@ namespace AnalyseApp_it._2.Controllers
             return View(taakModels);
         }
 
-        public IActionResult Details() 
+        public IActionResult Details(string taakId) 
         {
-            Console.WriteLine("Called for a detail");
+            Console.WriteLine("Called for a detail for taak: " + taakId);
 
-            return View();
+            TaakDMO taakDMO = dBHandler.GetTaakOnId(taakId);
+            TaakModel taakModel = new TaakModel(taakDMO);
+
+            return View(taakModel);
+        }
+
+        public IActionResult Overzichten()
+        {
+            Console.WriteLine("Going to overzichten");
+
+            List<OverzichtDMO> overzichtDMOs = dBHandler.GetOverzichten();
+
+            List<OverzichtModel> overzichten = new List<OverzichtModel>();
+            foreach (OverzichtDMO overzichtDMO in overzichtDMOs)
+            {
+                overzichten.Add(new OverzichtModel(overzichtDMO));
+            }
+
+            return View(overzichten);
         }
 
         public IActionResult Privacy()

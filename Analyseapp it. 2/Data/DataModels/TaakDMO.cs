@@ -20,5 +20,10 @@ namespace AnalyseApp_it._2.Data.DataModels
             this.changesCount = changes;
             this.subtaken = subtaken;
         }
+
+        public TaakDMO()
+        {
+            
+        }
     }
 }

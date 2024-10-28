@@ -260,9 +260,12 @@ def find_differences():
 
     det_file_content = ''
 
+    if len(files_a) > 0:
+        print("Files present!")
+
     # Loop trough each file in dir_a and compare it against the same file in dir_b
     for file in files_a:
-
+        print(file)
         file_name, file_ext = os.path.splitext(file)
 
         output_b_file = os.path.join(dir_b, file)

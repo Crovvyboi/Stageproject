@@ -18,22 +18,13 @@
                 <th scope="col">
                     Uitgevoerd over overzichten
                 </th>
-                <th scope="col">
-                    @Html.DisplayNameFor(Model => Model.addedColumnsCount)
-                </th>
-                <th scope="col">
-                    @Html.DisplayNameFor(Model => Model.removedColumnsCount)
-                </th>
-                <th scope="col">
-                    @Html.DisplayNameFor(Model => Model.changesCount)
-                </th>
 
 
             </thead>
 
             @foreach (TaakModel taak in Model)
             {
-                <tr value="Details" onclick="location.href='@Url.Action("Details", "Home", new {}, null)'">
+                <tr value="Details" onclick="location.href='@Url.Action("Details", "Home", new {taakId = taak.id}, null)'">
                     <th scope="row">
                         @taak.id
                     </th>
@@ -48,15 +39,6 @@
                                 <br />
                             }
                         </ul>
-                    </td>
-                    <td>
-                        @taak.addedColumnsCount
-                    </td>
-                    <td>
-                        @taak.removedColumnsCount
-                    </td>
-                    <td>
-                        @taak.changesCount
                     </td>
 
                 </tr>
