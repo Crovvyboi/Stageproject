@@ -1,2 +1,3 @@
 
 *.vsidx
+Pipeline scripts/testsuite_compare_copy.py

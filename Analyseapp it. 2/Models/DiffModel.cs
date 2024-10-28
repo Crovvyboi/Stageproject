@@ -2,10 +2,10 @@
 {
     public class DiffModel
     {
-        public string onEntryId { get; set; }
-        public string onColumn { get; set; }
-        public string valueA { get; set; }
-        public string valueB { get; set; }
+        public string onEntryId { get; private set; }
+        public string onColumn { get; private set; }
+        public string valueA { get; private set; }
+        public string valueB { get; private set; }
 
         public DiffModel(string onEntryId, string onColumn, string valueA, string valueB)
         {

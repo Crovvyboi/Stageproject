@@ -38,3 +38,132 @@ G:\Shule BS\Stage\Stageproject\AnalyseApp it. 2\obj\Debug\net8.0\AnalyseApp it. 
 G:\Shule BS\Stage\Stageproject\AnalyseApp it. 2\obj\Debug\net8.0\AnalyseApp it. 2.genruntimeconfig.cache
 G:\Shule BS\Stage\Stageproject\AnalyseApp it. 2\obj\Debug\net8.0\ref\AnalyseApp it. 2.dll
 G:\Shule BS\Stage\Stageproject\AnalyseApp it. 2\bin\Debug\net8.0\Newtonsoft.Json.dll
+C:\Users\rik.smolders\Desktop\Analyseapp\Stageproject\Analyseapp it. 2\bin\Debug\net8.0\appsettings.Development.json
+C:\Users\rik.smolders\Desktop\Analyseapp\Stageproject\Analyseapp it. 2\bin\Debug\net8.0\appsettings.json
+C:\Users\rik.smolders\Desktop\Analyseapp\Stageproject\Analyseapp it. 2\bin\Debug\net8.0\AnalyseApp it. 2.staticwebassets.runtime.json
+C:\Users\rik.smolders\Desktop\Analyseapp\Stageproject\Analyseapp it. 2\bin\Debug\net8.0\AnalyseApp it. 2.exe
+C:\Users\rik.smolders\Desktop\Analyseapp\Stageproject\Analyseapp it. 2\bin\Debug\net8.0\AnalyseApp it. 2.deps.json
+C:\Users\rik.smolders\Desktop\Analyseapp\Stageproject\Analyseapp it. 2\bin\Debug\net8.0\AnalyseApp it. 2.runtimeconfig.json
+C:\Users\rik.smolders\Desktop\Analyseapp\Stageproject\Analyseapp it. 2\bin\Debug\net8.0\AnalyseApp it. 2.dll
+C:\Users\rik.smolders\Desktop\Analyseapp\Stageproject\Analyseapp it. 2\bin\Debug\net8.0\AnalyseApp it. 2.pdb
+C:\Users\rik.smolders\Desktop\Analyseapp\Stageproject\Analyseapp it. 2\bin\Debug\net8.0\DnsClient.dll
+C:\Users\rik.smolders\Desktop\Analyseapp\Stageproject\Analyseapp it. 2\bin\Debug\net8.0\MongoDB.Bson.dll
+C:\Users\rik.smolders\Desktop\Analyseapp\Stageproject\Analyseapp it. 2\bin\Debug\net8.0\MongoDB.Driver.dll
+C:\Users\rik.smolders\Desktop\Analyseapp\Stageproject\Analyseapp it. 2\bin\Debug\net8.0\Newtonsoft.Json.dll
+C:\Users\rik.smolders\Desktop\Analyseapp\Stageproject\Analyseapp it. 2\bin\Debug\net8.0\SharpCompress.dll
+C:\Users\rik.smolders\Desktop\Analyseapp\Stageproject\Analyseapp it. 2\bin\Debug\net8.0\Snappier.dll
+C:\Users\rik.smolders\Desktop\Analyseapp\Stageproject\Analyseapp it. 2\bin\Debug\net8.0\ZstdSharp.dll
+C:\Users\rik.smolders\Desktop\Analyseapp\Stageproject\Analyseapp it. 2\obj\Debug\net8.0\AnalyseApp it. 2.csproj.AssemblyReference.cache
+C:\Users\rik.smolders\Desktop\Analyseapp\Stageproject\Analyseapp it. 2\obj\Debug\net8.0\AnalyseApp it. 2.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\rik.smolders\Desktop\Analyseapp\Stageproject\Analyseapp it. 2\obj\Debug\net8.0\AnalyseApp it. 2.AssemblyInfoInputs.cache
+C:\Users\rik.smolders\Desktop\Analyseapp\Stageproject\Analyseapp it. 2\obj\Debug\net8.0\AnalyseApp it. 2.AssemblyInfo.cs
+C:\Users\rik.smolders\Desktop\Analyseapp\Stageproject\Analyseapp it. 2\obj\Debug\net8.0\AnalyseApp it. 2.csproj.CoreCompileInputs.cache
+C:\Users\rik.smolders\Desktop\Analyseapp\Stageproject\Analyseapp it. 2\obj\Debug\net8.0\AnalyseApp it. 2.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\rik.smolders\Desktop\Analyseapp\Stageproject\Analyseapp it. 2\obj\Debug\net8.0\AnalyseApp it. 2.RazorAssemblyInfo.cache
+C:\Users\rik.smolders\Desktop\Analyseapp\Stageproject\Analyseapp it. 2\obj\Debug\net8.0\AnalyseApp it. 2.RazorAssemblyInfo.cs
+C:\Users\rik.smolders\Desktop\Analyseapp\Stageproject\Analyseapp it. 2\obj\Debug\net8.0\AnalyseApp it. 2.sourcelink.json
+C:\Users\rik.smolders\Desktop\Analyseapp\Stageproject\Analyseapp it. 2\obj\Debug\net8.0\staticwebassets.build.json
+C:\Users\rik.smolders\Desktop\Analyseapp\Stageproject\Analyseapp it. 2\obj\Debug\net8.0\staticwebassets.development.json
+C:\Users\rik.smolders\Desktop\Analyseapp\Stageproject\Analyseapp it. 2\obj\Debug\net8.0\staticwebassets\msbuild.AnalyseApp it. 2.Microsoft.AspNetCore.StaticWebAssets.props
+C:\Users\rik.smolders\Desktop\Analyseapp\Stageproject\Analyseapp it. 2\obj\Debug\net8.0\staticwebassets\msbuild.build.AnalyseApp it. 2.props
+C:\Users\rik.smolders\Desktop\Analyseapp\Stageproject\Analyseapp it. 2\obj\Debug\net8.0\staticwebassets\msbuild.buildMultiTargeting.AnalyseApp it. 2.props
+C:\Users\rik.smolders\Desktop\Analyseapp\Stageproject\Analyseapp it. 2\obj\Debug\net8.0\staticwebassets\msbuild.buildTransitive.AnalyseApp it. 2.props
+C:\Users\rik.smolders\Desktop\Analyseapp\Stageproject\Analyseapp it. 2\obj\Debug\net8.0\staticwebassets.pack.json
+C:\Users\rik.smolders\Desktop\Analyseapp\Stageproject\Analyseapp it. 2\obj\Debug\net8.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css
+C:\Users\rik.smolders\Desktop\Analyseapp\Stageproject\Analyseapp it. 2\obj\Debug\net8.0\scopedcss\bundle\AnalyseApp it. 2.styles.css
+C:\Users\rik.smolders\Desktop\Analyseapp\Stageproject\Analyseapp it. 2\obj\Debug\net8.0\scopedcss\projectbundle\AnalyseApp it. 2.bundle.scp.css
+C:\Users\rik.smolders\Desktop\Analyseapp\Stageproject\Analyseapp it. 2\obj\Debug\net8.0\AnalyseA.158C541D.Up2Date
+C:\Users\rik.smolders\Desktop\Analyseapp\Stageproject\Analyseapp it. 2\obj\Debug\net8.0\AnalyseApp it. 2.dll
+C:\Users\rik.smolders\Desktop\Analyseapp\Stageproject\Analyseapp it. 2\obj\Debug\net8.0\refint\AnalyseApp it. 2.dll
+C:\Users\rik.smolders\Desktop\Analyseapp\Stageproject\Analyseapp it. 2\obj\Debug\net8.0\AnalyseApp it. 2.pdb
+C:\Users\rik.smolders\Desktop\Analyseapp\Stageproject\Analyseapp it. 2\obj\Debug\net8.0\AnalyseApp it. 2.genruntimeconfig.cache
+C:\Users\rik.smolders\Desktop\Analyseapp\Stageproject\Analyseapp it. 2\obj\Debug\net8.0\ref\AnalyseApp it. 2.dll
+C:\Users\rik.smolders\Desktop\Analyseapp\Stageproject\Analyseapp it. 2\bin\Debug\net8.0\Humanizer.dll
+C:\Users\rik.smolders\Desktop\Analyseapp\Stageproject\Analyseapp it. 2\bin\Debug\net8.0\itext.barcodes.dll
+C:\Users\rik.smolders\Desktop\Analyseapp\Stageproject\Analyseapp it. 2\bin\Debug\net8.0\itext.bouncy-castle-connector.dll
+C:\Users\rik.smolders\Desktop\Analyseapp\Stageproject\Analyseapp it. 2\bin\Debug\net8.0\itext.forms.dll
+C:\Users\rik.smolders\Desktop\Analyseapp\Stageproject\Analyseapp it. 2\bin\Debug\net8.0\itext.io.dll
+C:\Users\rik.smolders\Desktop\Analyseapp\Stageproject\Analyseapp it. 2\bin\Debug\net8.0\itext.kernel.dll
+C:\Users\rik.smolders\Desktop\Analyseapp\Stageproject\Analyseapp it. 2\bin\Debug\net8.0\itext.layout.dll
+C:\Users\rik.smolders\Desktop\Analyseapp\Stageproject\Analyseapp it. 2\bin\Debug\net8.0\itext.pdfa.dll
+C:\Users\rik.smolders\Desktop\Analyseapp\Stageproject\Analyseapp it. 2\bin\Debug\net8.0\itext.pdfua.dll
+C:\Users\rik.smolders\Desktop\Analyseapp\Stageproject\Analyseapp it. 2\bin\Debug\net8.0\itext.sign.dll
+C:\Users\rik.smolders\Desktop\Analyseapp\Stageproject\Analyseapp it. 2\bin\Debug\net8.0\itext.styledxmlparser.dll
+C:\Users\rik.smolders\Desktop\Analyseapp\Stageproject\Analyseapp it. 2\bin\Debug\net8.0\itext.svg.dll
+C:\Users\rik.smolders\Desktop\Analyseapp\Stageproject\Analyseapp it. 2\bin\Debug\net8.0\itext.commons.dll
+C:\Users\rik.smolders\Desktop\Analyseapp\Stageproject\Analyseapp it. 2\bin\Debug\net8.0\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\rik.smolders\Desktop\Analyseapp\Stageproject\Analyseapp it. 2\bin\Debug\net8.0\Microsoft.CodeAnalysis.dll
+C:\Users\rik.smolders\Desktop\Analyseapp\Stageproject\Analyseapp it. 2\bin\Debug\net8.0\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\rik.smolders\Desktop\Analyseapp\Stageproject\Analyseapp it. 2\bin\Debug\net8.0\Microsoft.CodeAnalysis.CSharp.Workspaces.dll
+C:\Users\rik.smolders\Desktop\Analyseapp\Stageproject\Analyseapp it. 2\bin\Debug\net8.0\Microsoft.CodeAnalysis.Workspaces.dll
+C:\Users\rik.smolders\Desktop\Analyseapp\Stageproject\Analyseapp it. 2\bin\Debug\net8.0\Microsoft.DotNet.PlatformAbstractions.dll
+C:\Users\rik.smolders\Desktop\Analyseapp\Stageproject\Analyseapp it. 2\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.dll
+C:\Users\rik.smolders\Desktop\Analyseapp\Stageproject\Analyseapp it. 2\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\Users\rik.smolders\Desktop\Analyseapp\Stageproject\Analyseapp it. 2\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Design.dll
+C:\Users\rik.smolders\Desktop\Analyseapp\Stageproject\Analyseapp it. 2\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Relational.dll
+C:\Users\rik.smolders\Desktop\Analyseapp\Stageproject\Analyseapp it. 2\bin\Debug\net8.0\Microsoft.Extensions.Caching.Memory.dll
+C:\Users\rik.smolders\Desktop\Analyseapp\Stageproject\Analyseapp it. 2\bin\Debug\net8.0\Microsoft.Extensions.DependencyInjection.dll
+C:\Users\rik.smolders\Desktop\Analyseapp\Stageproject\Analyseapp it. 2\bin\Debug\net8.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Users\rik.smolders\Desktop\Analyseapp\Stageproject\Analyseapp it. 2\bin\Debug\net8.0\Microsoft.Extensions.DependencyModel.dll
+C:\Users\rik.smolders\Desktop\Analyseapp\Stageproject\Analyseapp it. 2\bin\Debug\net8.0\Microsoft.Extensions.Logging.dll
+C:\Users\rik.smolders\Desktop\Analyseapp\Stageproject\Analyseapp it. 2\bin\Debug\net8.0\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Users\rik.smolders\Desktop\Analyseapp\Stageproject\Analyseapp it. 2\bin\Debug\net8.0\Microsoft.Extensions.Options.dll
+C:\Users\rik.smolders\Desktop\Analyseapp\Stageproject\Analyseapp it. 2\bin\Debug\net8.0\Mono.TextTemplating.dll
+C:\Users\rik.smolders\Desktop\Analyseapp\Stageproject\Analyseapp it. 2\bin\Debug\net8.0\System.CodeDom.dll
+C:\Users\rik.smolders\Desktop\Analyseapp\Stageproject\Analyseapp it. 2\bin\Debug\net8.0\System.Composition.AttributedModel.dll
+C:\Users\rik.smolders\Desktop\Analyseapp\Stageproject\Analyseapp it. 2\bin\Debug\net8.0\System.Composition.Convention.dll
+C:\Users\rik.smolders\Desktop\Analyseapp\Stageproject\Analyseapp it. 2\bin\Debug\net8.0\System.Composition.Hosting.dll
+C:\Users\rik.smolders\Desktop\Analyseapp\Stageproject\Analyseapp it. 2\bin\Debug\net8.0\System.Composition.Runtime.dll
+C:\Users\rik.smolders\Desktop\Analyseapp\Stageproject\Analyseapp it. 2\bin\Debug\net8.0\System.Composition.TypedParts.dll
+C:\Users\rik.smolders\Desktop\Analyseapp\Stageproject\Analyseapp it. 2\bin\Debug\net8.0\cs\Microsoft.CodeAnalysis.resources.dll
+C:\Users\rik.smolders\Desktop\Analyseapp\Stageproject\Analyseapp it. 2\bin\Debug\net8.0\de\Microsoft.CodeAnalysis.resources.dll
+C:\Users\rik.smolders\Desktop\Analyseapp\Stageproject\Analyseapp it. 2\bin\Debug\net8.0\es\Microsoft.CodeAnalysis.resources.dll
+C:\Users\rik.smolders\Desktop\Analyseapp\Stageproject\Analyseapp it. 2\bin\Debug\net8.0\fr\Microsoft.CodeAnalysis.resources.dll
+C:\Users\rik.smolders\Desktop\Analyseapp\Stageproject\Analyseapp it. 2\bin\Debug\net8.0\it\Microsoft.CodeAnalysis.resources.dll
+C:\Users\rik.smolders\Desktop\Analyseapp\Stageproject\Analyseapp it. 2\bin\Debug\net8.0\ja\Microsoft.CodeAnalysis.resources.dll
+C:\Users\rik.smolders\Desktop\Analyseapp\Stageproject\Analyseapp it. 2\bin\Debug\net8.0\ko\Microsoft.CodeAnalysis.resources.dll
+C:\Users\rik.smolders\Desktop\Analyseapp\Stageproject\Analyseapp it. 2\bin\Debug\net8.0\pl\Microsoft.CodeAnalysis.resources.dll
+C:\Users\rik.smolders\Desktop\Analyseapp\Stageproject\Analyseapp it. 2\bin\Debug\net8.0\pt-BR\Microsoft.CodeAnalysis.resources.dll
+C:\Users\rik.smolders\Desktop\Analyseapp\Stageproject\Analyseapp it. 2\bin\Debug\net8.0\ru\Microsoft.CodeAnalysis.resources.dll
+C:\Users\rik.smolders\Desktop\Analyseapp\Stageproject\Analyseapp it. 2\bin\Debug\net8.0\tr\Microsoft.CodeAnalysis.resources.dll
+C:\Users\rik.smolders\Desktop\Analyseapp\Stageproject\Analyseapp it. 2\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.resources.dll
+C:\Users\rik.smolders\Desktop\Analyseapp\Stageproject\Analyseapp it. 2\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.resources.dll
+C:\Users\rik.smolders\Desktop\Analyseapp\Stageproject\Analyseapp it. 2\bin\Debug\net8.0\cs\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\rik.smolders\Desktop\Analyseapp\Stageproject\Analyseapp it. 2\bin\Debug\net8.0\de\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\rik.smolders\Desktop\Analyseapp\Stageproject\Analyseapp it. 2\bin\Debug\net8.0\es\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\rik.smolders\Desktop\Analyseapp\Stageproject\Analyseapp it. 2\bin\Debug\net8.0\fr\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\rik.smolders\Desktop\Analyseapp\Stageproject\Analyseapp it. 2\bin\Debug\net8.0\it\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\rik.smolders\Desktop\Analyseapp\Stageproject\Analyseapp it. 2\bin\Debug\net8.0\ja\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\rik.smolders\Desktop\Analyseapp\Stageproject\Analyseapp it. 2\bin\Debug\net8.0\ko\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\rik.smolders\Desktop\Analyseapp\Stageproject\Analyseapp it. 2\bin\Debug\net8.0\pl\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\rik.smolders\Desktop\Analyseapp\Stageproject\Analyseapp it. 2\bin\Debug\net8.0\pt-BR\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\rik.smolders\Desktop\Analyseapp\Stageproject\Analyseapp it. 2\bin\Debug\net8.0\ru\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\rik.smolders\Desktop\Analyseapp\Stageproject\Analyseapp it. 2\bin\Debug\net8.0\tr\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\rik.smolders\Desktop\Analyseapp\Stageproject\Analyseapp it. 2\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\rik.smolders\Desktop\Analyseapp\Stageproject\Analyseapp it. 2\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\rik.smolders\Desktop\Analyseapp\Stageproject\Analyseapp it. 2\bin\Debug\net8.0\cs\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\rik.smolders\Desktop\Analyseapp\Stageproject\Analyseapp it. 2\bin\Debug\net8.0\de\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\rik.smolders\Desktop\Analyseapp\Stageproject\Analyseapp it. 2\bin\Debug\net8.0\es\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\rik.smolders\Desktop\Analyseapp\Stageproject\Analyseapp it. 2\bin\Debug\net8.0\fr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\rik.smolders\Desktop\Analyseapp\Stageproject\Analyseapp it. 2\bin\Debug\net8.0\it\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\rik.smolders\Desktop\Analyseapp\Stageproject\Analyseapp it. 2\bin\Debug\net8.0\ja\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\rik.smolders\Desktop\Analyseapp\Stageproject\Analyseapp it. 2\bin\Debug\net8.0\ko\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\rik.smolders\Desktop\Analyseapp\Stageproject\Analyseapp it. 2\bin\Debug\net8.0\pl\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\rik.smolders\Desktop\Analyseapp\Stageproject\Analyseapp it. 2\bin\Debug\net8.0\pt-BR\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\rik.smolders\Desktop\Analyseapp\Stageproject\Analyseapp it. 2\bin\Debug\net8.0\ru\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\rik.smolders\Desktop\Analyseapp\Stageproject\Analyseapp it. 2\bin\Debug\net8.0\tr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\rik.smolders\Desktop\Analyseapp\Stageproject\Analyseapp it. 2\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\rik.smolders\Desktop\Analyseapp\Stageproject\Analyseapp it. 2\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\rik.smolders\Desktop\Analyseapp\Stageproject\Analyseapp it. 2\bin\Debug\net8.0\cs\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\rik.smolders\Desktop\Analyseapp\Stageproject\Analyseapp it. 2\bin\Debug\net8.0\de\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\rik.smolders\Desktop\Analyseapp\Stageproject\Analyseapp it. 2\bin\Debug\net8.0\es\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\rik.smolders\Desktop\Analyseapp\Stageproject\Analyseapp it. 2\bin\Debug\net8.0\fr\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\rik.smolders\Desktop\Analyseapp\Stageproject\Analyseapp it. 2\bin\Debug\net8.0\it\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\rik.smolders\Desktop\Analyseapp\Stageproject\Analyseapp it. 2\bin\Debug\net8.0\ja\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\rik.smolders\Desktop\Analyseapp\Stageproject\Analyseapp it. 2\bin\Debug\net8.0\ko\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\rik.smolders\Desktop\Analyseapp\Stageproject\Analyseapp it. 2\bin\Debug\net8.0\pl\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\rik.smolders\Desktop\Analyseapp\Stageproject\Analyseapp it. 2\bin\Debug\net8.0\pt-BR\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\rik.smolders\Desktop\Analyseapp\Stageproject\Analyseapp it. 2\bin\Debug\net8.0\ru\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\rik.smolders\Desktop\Analyseapp\Stageproject\Analyseapp it. 2\bin\Debug\net8.0\tr\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\rik.smolders\Desktop\Analyseapp\Stageproject\Analyseapp it. 2\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\rik.smolders\Desktop\Analyseapp\Stageproject\Analyseapp it. 2\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.Workspaces.resources.dll

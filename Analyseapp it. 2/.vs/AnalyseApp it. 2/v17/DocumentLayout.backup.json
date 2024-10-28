@@ -1,14 +1,30 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "G:\\Shule BS\\Stage\\Stageproject\\Analyseapp it. 2\\",
+  "WorkspaceRootPath": "C:\\Users\\rik.smolders\\Desktop\\Analyseapp\\Stageproject\\Analyseapp it. 2\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A7833FEE-E01A-44C1-8540-A8F136344BB4}|AnalyseApp it. 2.csproj|g:\\shule bs\\stage\\stageproject\\analyseapp it. 2\\data\\dbhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{A7833FEE-E01A-44C1-8540-A8F136344BB4}|AnalyseApp it. 2.csproj|c:\\users\\rik.smolders\\desktop\\analyseapp\\stageproject\\analyseapp it. 2\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A7833FEE-E01A-44C1-8540-A8F136344BB4}|AnalyseApp it. 2.csproj|solutionrelative:views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A7833FEE-E01A-44C1-8540-A8F136344BB4}|AnalyseApp it. 2.csproj|c:\\users\\rik.smolders\\desktop\\analyseapp\\stageproject\\analyseapp it. 2\\models\\subtaakmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A7833FEE-E01A-44C1-8540-A8F136344BB4}|AnalyseApp it. 2.csproj|solutionrelative:models\\subtaakmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A7833FEE-E01A-44C1-8540-A8F136344BB4}|AnalyseApp it. 2.csproj|c:\\users\\rik.smolders\\desktop\\analyseapp\\stageproject\\analyseapp it. 2\\models\\taakmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A7833FEE-E01A-44C1-8540-A8F136344BB4}|AnalyseApp it. 2.csproj|solutionrelative:models\\taakmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A7833FEE-E01A-44C1-8540-A8F136344BB4}|AnalyseApp it. 2.csproj|c:\\users\\rik.smolders\\desktop\\analyseapp\\stageproject\\analyseapp it. 2\\data\\dbhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A7833FEE-E01A-44C1-8540-A8F136344BB4}|AnalyseApp it. 2.csproj|solutionrelative:data\\dbhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A7833FEE-E01A-44C1-8540-A8F136344BB4}|AnalyseApp it. 2.csproj|g:\\shule bs\\stage\\stageproject\\analyseapp it. 2\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{A7833FEE-E01A-44C1-8540-A8F136344BB4}|AnalyseApp it. 2.csproj|c:\\users\\rik.smolders\\desktop\\analyseapp\\stageproject\\analyseapp it. 2\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A7833FEE-E01A-44C1-8540-A8F136344BB4}|AnalyseApp it. 2.csproj|solutionrelative:controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A7833FEE-E01A-44C1-8540-A8F136344BB4}|AnalyseApp it. 2.csproj|c:\\users\\rik.smolders\\desktop\\analyseapp\\stageproject\\analyseapp it. 2\\models\\diffmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A7833FEE-E01A-44C1-8540-A8F136344BB4}|AnalyseApp it. 2.csproj|solutionrelative:models\\diffmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -17,41 +33,89 @@
       "VerticalTabListWidth": 256,
       "DocumentGroups": [
         {
-          "DockedWidth": 221,
-          "SelectedChildIndex": 3,
+          "DockedWidth": 188,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Bookmark",
-              "Name": "ST:0:0:{e1b7d1f8-9b3c-49b1-8f4f-bfc63a88835d}"
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
             },
             {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{fbcae063-e2c0-4ab1-a516-996ea3dafb72}"
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "DBHandler.cs",
+              "DocumentMoniker": "C:\\Users\\rik.smolders\\Desktop\\Analyseapp\\Stageproject\\Analyseapp it. 2\\Data\\DBHandler.cs",
+              "RelativeDocumentMoniker": "Data\\DBHandler.cs",
+              "ToolTip": "C:\\Users\\rik.smolders\\Desktop\\Analyseapp\\Stageproject\\Analyseapp it. 2\\Data\\DBHandler.cs",
+              "RelativeToolTip": "Data\\DBHandler.cs",
+              "ViewState": "AgIAADEAAAAAAAAAAAAgwFAAAAAUAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-28T09:48:35.665Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\rik.smolders\\Desktop\\Analyseapp\\Stageproject\\Analyseapp it. 2\\Views\\Home\\Index.cshtml",
+              "RelativeDocumentMoniker": "Views\\Home\\Index.cshtml",
+              "ToolTip": "C:\\Users\\rik.smolders\\Desktop\\Analyseapp\\Stageproject\\Analyseapp it. 2\\Views\\Home\\Index.cshtml",
+              "RelativeToolTip": "Views\\Home\\Index.cshtml",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAowBAAAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-10-28T08:52:36.315Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "DiffModel.cs",
+              "DocumentMoniker": "C:\\Users\\rik.smolders\\Desktop\\Analyseapp\\Stageproject\\Analyseapp it. 2\\Models\\DiffModel.cs",
+              "RelativeDocumentMoniker": "Models\\DiffModel.cs",
+              "ToolTip": "C:\\Users\\rik.smolders\\Desktop\\Analyseapp\\Stageproject\\Analyseapp it. 2\\Models\\DiffModel.cs",
+              "RelativeToolTip": "Models\\DiffModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAsAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-28T09:18:56.254Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
+              "Title": "SubtaakModel.cs",
+              "DocumentMoniker": "C:\\Users\\rik.smolders\\Desktop\\Analyseapp\\Stageproject\\Analyseapp it. 2\\Models\\SubtaakModel.cs",
+              "RelativeDocumentMoniker": "Models\\SubtaakModel.cs",
+              "ToolTip": "C:\\Users\\rik.smolders\\Desktop\\Analyseapp\\Stageproject\\Analyseapp it. 2\\Models\\SubtaakModel.cs",
+              "RelativeToolTip": "Models\\SubtaakModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAA5AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-28T09:18:46.885Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
               "Title": "HomeController.cs",
-              "DocumentMoniker": "G:\\Shule BS\\Stage\\Stageproject\\Analyseapp it. 2\\Controllers\\HomeController.cs",
+              "DocumentMoniker": "C:\\Users\\rik.smolders\\Desktop\\Analyseapp\\Stageproject\\Analyseapp it. 2\\Controllers\\HomeController.cs",
               "RelativeDocumentMoniker": "Controllers\\HomeController.cs",
-              "ToolTip": "G:\\Shule BS\\Stage\\Stageproject\\Analyseapp it. 2\\Controllers\\HomeController.cs",
+              "ToolTip": "C:\\Users\\rik.smolders\\Desktop\\Analyseapp\\Stageproject\\Analyseapp it. 2\\Controllers\\HomeController.cs",
               "RelativeToolTip": "Controllers\\HomeController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAkAAAAAAAAAA==",
+              "ViewState": "AgIAAAQAAAAAAAAAAAAawB8AAAAiAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-25T12:10:39.234Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "DBHandler.cs",
-              "DocumentMoniker": "G:\\Shule BS\\Stage\\Stageproject\\Analyseapp it. 2\\Data\\DBHandler.cs",
-              "RelativeDocumentMoniker": "Data\\DBHandler.cs",
-              "ToolTip": "G:\\Shule BS\\Stage\\Stageproject\\Analyseapp it. 2\\Data\\DBHandler.cs",
-              "RelativeToolTip": "Data\\DBHandler.cs",
-              "ViewState": "AgIAACsAAAAAAAAAAAAAAEYAAABIAAAAAAAAAA==",
+              "DocumentIndex": 2,
+              "Title": "TaakModel.cs",
+              "DocumentMoniker": "C:\\Users\\rik.smolders\\Desktop\\Analyseapp\\Stageproject\\Analyseapp it. 2\\Models\\TaakModel.cs",
+              "RelativeDocumentMoniker": "Models\\TaakModel.cs",
+              "ToolTip": "C:\\Users\\rik.smolders\\Desktop\\Analyseapp\\Stageproject\\Analyseapp it. 2\\Models\\TaakModel.cs",
+              "RelativeToolTip": "Models\\TaakModel.cs",
+              "ViewState": "AgIAABgAAAAAAAAAAAAawBoAAAAsAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-25T12:07:46.338Z",
+              "WhenOpened": "2024-10-25T14:12:28.044Z",
               "EditorCaption": ""
             }
           ]

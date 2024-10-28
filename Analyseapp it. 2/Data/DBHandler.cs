@@ -33,7 +33,6 @@ namespace AnalyseApp_it._2.Data
 
                 var bson = client.GetDatabase("analyse_data").GetCollection<BsonDocument>("taken").Find(_ => true).ToList();
 
-                Console.WriteLine(bson);
                 foreach (var item in bson)
                 {
                     // Convert Bson object to readable Json structure
@@ -51,8 +50,6 @@ namespace AnalyseApp_it._2.Data
 
                     JsonObject dateObj = (JsonObject)js.First(x => x.Key.Contains("uitvoer_date")).Value;
                     DateTimeOffset dateTime = DateTimeOffset.Parse((string)dateObj.First(x => x.Key.Contains("$date")).Value);
-
-                    Console.WriteLine(js);
 
                     // Get subtaak object
                     List<SubtaakModel> subtaken = new List<SubtaakModel>();

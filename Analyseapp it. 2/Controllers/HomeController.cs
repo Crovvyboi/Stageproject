@@ -29,6 +29,13 @@ namespace AnalyseApp_it._2.Controllers
 
             Console.WriteLine("Collected Data!");
 
+            return View(taakModels);
+        }
+
+        public IActionResult Details() 
+        {
+            Console.WriteLine("Called for a detail");
+
             return View();
         }
 

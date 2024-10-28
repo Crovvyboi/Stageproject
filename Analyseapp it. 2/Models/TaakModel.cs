@@ -1,15 +1,21 @@
 ﻿using AnalyseApp_it._2.Data.DataModels;
+using System.ComponentModel;
 
 namespace AnalyseApp_it._2.Models
 {
     public class TaakModel
     {
-        public string id { get; set; }
-        public DateTimeOffset dateTime { get; set; }
-        public int addedColumnsCount { get; set; }
-        public int removedColumnsCount { get; set; }
-        public int changesCount { get; set; }
-        public List<SubtaakModel> subtaken { get; set; }
+        [DisplayName("Id")]
+        public string id { get; private set; }
+        [DisplayName("Datum - Tijd")]
+        public DateTimeOffset dateTime { get; private set; }
+        [DisplayName("Toegevoegde kolommen")]
+        public int addedColumnsCount { get; private set; }
+        [DisplayName("Verwijderde kolommen")]
+        public int removedColumnsCount { get; private set; }
+        [DisplayName("Gedetecteerde verschillen")]
+        public int changesCount { get; private set; }
+        public List<SubtaakModel> subtaken { get; private set; }
 
         public TaakModel(TaakDMO taakDMO)
         {
@@ -18,7 +24,25 @@ namespace AnalyseApp_it._2.Models
             this.addedColumnsCount = taakDMO.addedColumnsCount;
             this.removedColumnsCount = taakDMO.removedColumnsCount;
             this.changesCount = taakDMO.changesCount;
-            this.subtaken = new List<SubtaakModel>();
+            this.subtaken = taakDMO.subtaken;
+        }
+
+        public string GetDateTimeString()
+        {
+            return dateTime.ToString("dd MMM yyyy HH:mm:ss");
+        }
+
+        public List<string> GetOverzichten()
+        {
+            List<string> result = new List<string>();
+            foreach (SubtaakModel subtaak in subtaken)
+            {
+                if (!result.Contains(subtaak.overzicht))
+                {
+                    result.Add(subtaak.overzicht);
+                }
+            }
+            return result;
         }
     }
 }

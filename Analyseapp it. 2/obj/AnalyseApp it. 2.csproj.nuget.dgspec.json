@@ -1,24 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "G:\\Shule BS\\Stage\\Stageproject\\AnalyseApp it. 2\\AnalyseApp it. 2.csproj": {}
+    "C:\\Users\\rik.smolders\\Desktop\\Analyseapp\\Stageproject\\Analyseapp it. 2\\AnalyseApp it. 2.csproj": {}
   },
   "projects": {
-    "G:\\Shule BS\\Stage\\Stageproject\\AnalyseApp it. 2\\AnalyseApp it. 2.csproj": {
+    "C:\\Users\\rik.smolders\\Desktop\\Analyseapp\\Stageproject\\Analyseapp it. 2\\AnalyseApp it. 2.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "G:\\Shule BS\\Stage\\Stageproject\\AnalyseApp it. 2\\AnalyseApp it. 2.csproj",
+        "projectUniqueName": "C:\\Users\\rik.smolders\\Desktop\\Analyseapp\\Stageproject\\Analyseapp it. 2\\AnalyseApp it. 2.csproj",
         "projectName": "AnalyseApp it. 2",
-        "projectPath": "G:\\Shule BS\\Stage\\Stageproject\\AnalyseApp it. 2\\AnalyseApp it. 2.csproj",
-        "packagesPath": "C:\\Users\\riksm\\.nuget\\packages\\",
-        "outputPath": "G:\\Shule BS\\Stage\\Stageproject\\AnalyseApp it. 2\\obj\\",
+        "projectPath": "C:\\Users\\rik.smolders\\Desktop\\Analyseapp\\Stageproject\\Analyseapp it. 2\\AnalyseApp it. 2.csproj",
+        "packagesPath": "C:\\Users\\rik.smolders\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\rik.smolders\\Desktop\\Analyseapp\\Stageproject\\Analyseapp it. 2\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\riksm\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Users\\rik.smolders\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -50,6 +46,16 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[8.0.10, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[8.0.10, )"
+            },
             "MongoDB.Bson": {
               "target": "Package",
               "version": "[3.0.0, )"
@@ -61,6 +67,10 @@
             "Newtonsoft.Json": {
               "target": "Package",
               "version": "[13.0.3, )"
+            },
+            "itext7": {
+              "target": "Package",
+              "version": "[8.0.5, )"
             }
           },
           "imports": [

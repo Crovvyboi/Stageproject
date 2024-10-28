@@ -10189,24 +10189,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\riksm\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+    "C:\\Users\\rik.smolders\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "G:\\Shule BS\\Stage\\Stageproject\\Analyseapp it. 1\\Analyseapp\\Analyseapp.csproj",
+      "projectUniqueName": "C:\\Users\\rik.smolders\\Desktop\\Analyseapp\\Stageproject\\Analyseapp it. 1\\Analyseapp\\Analyseapp.csproj",
       "projectName": "Analyseapp",
-      "projectPath": "G:\\Shule BS\\Stage\\Stageproject\\Analyseapp it. 1\\Analyseapp\\Analyseapp.csproj",
-      "packagesPath": "C:\\Users\\riksm\\.nuget\\packages\\",
-      "outputPath": "G:\\Shule BS\\Stage\\Stageproject\\Analyseapp it. 1\\Analyseapp\\obj\\",
+      "projectPath": "C:\\Users\\rik.smolders\\Desktop\\Analyseapp\\Stageproject\\Analyseapp it. 1\\Analyseapp\\Analyseapp.csproj",
+      "packagesPath": "C:\\Users\\rik.smolders\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\rik.smolders\\Desktop\\Analyseapp\\Stageproject\\Analyseapp it. 1\\Analyseapp\\obj\\",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-      ],
       "configFilePaths": [
-        "C:\\Users\\riksm\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Users\\rik.smolders\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [

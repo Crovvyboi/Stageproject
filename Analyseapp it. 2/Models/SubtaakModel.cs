@@ -2,10 +2,10 @@
 {
     public class SubtaakModel
     {
-        public string overzicht { get; set; }
-        public string addedColumns { get; set; }
-        public string removedColumns { get; set; }
-        public List<DiffModel> foundDiffs { get; set; }
+        public string overzicht { get; private set; }
+        public string addedColumns { get; private set; }
+        public string removedColumns { get; private set; }
+        public List<DiffModel> foundDiffs { get; private set; }
 
         public SubtaakModel(string overzicht, string addedColumns, string removedColumns, List<DiffModel> foundDiffs)
         {
