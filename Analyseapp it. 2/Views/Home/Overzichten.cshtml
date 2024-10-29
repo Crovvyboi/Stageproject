@@ -4,4 +4,39 @@
 
 <div class="text-center">
     <h1 class="display-4">Overzicht overview</h1>
+    <table class ="table table-striped table-hover">
+        <thead>
+            <th scope ="col">
+                Overzicht
+            </th>
+            <th scope ="col">
+                Laatst uitgevoerd
+            </th>
+            <th scope="col">
+                Keren uitgevoerd
+            </th>
+            <th scope="col">
+                Totaal gevonden verschillen
+            </th>
+        </thead>
+        @foreach (OverzichtModel overzichtModel in Model)
+        {
+            <tr value="Details" onclick="location.href='@Url.Action("OverzichtDetails", "Home", new { overzichtNaam = overzichtModel.overzichtNaam }, null)'">
+                <td>
+                    @overzichtModel.overzichtNaam
+                </td>
+                <td>
+                    @overzichtModel.subtaken[0].GetDateTimeString()
+                </td>
+                <td>
+                    @overzichtModel.GetKerenUitgevoerd()
+                </td>
+                <td>
+                    @overzichtModel.GetTotaalGevondenVerschillen()
+                </td>
+
+            </tr>
+        }
+    </table>
 </div>
+

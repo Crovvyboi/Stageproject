@@ -231,5 +231,11 @@ namespace AnalyseApp_it._2.Data
 
             return overzichtDMOs;
         }
+
+        public OverzichtDMO GetOverzichtOnNaam(string overzichtNaam)
+        {
+            List<OverzichtDMO> overzichten = GetOverzichten();
+            return overzichten.FirstOrDefault(x => x.overzichtNaam == overzichtNaam, null);
+        }
     }
 }

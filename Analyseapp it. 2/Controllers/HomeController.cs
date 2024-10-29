@@ -20,7 +20,6 @@ namespace AnalyseApp_it._2.Controllers
 
         public IActionResult Index()
         {
-            
             List<TaakDMO> taakDMOs = dBHandler.GetAllTaken();
 
             List<TaakModel> taakModels = new List<TaakModel>();
@@ -29,7 +28,7 @@ namespace AnalyseApp_it._2.Controllers
                 taakModels.Add(new TaakModel(item));
             }
 
-            Console.WriteLine("Collected Data!");
+            taakModels.OrderByDescending(x => x.dateTime);
 
             return View(taakModels);
         }
@@ -56,7 +55,24 @@ namespace AnalyseApp_it._2.Controllers
                 overzichten.Add(new OverzichtModel(overzichtDMO));
             }
 
+            foreach (OverzichtModel subtaak in overzichten)
+            {
+                subtaak.subtaken.OrderByDescending(x => x.datetime);
+            }
+
+            overzichten.OrderBy(x => x.subtaken[0].datetime);
+
             return View(overzichten);
+        }
+
+        public IActionResult OverzichtDetails(string overzichtNaam)
+        {
+            OverzichtDMO overzichtDMO = dBHandler.GetOverzichtOnNaam(overzichtNaam);
+            OverzichtModel overzicht = new OverzichtModel(overzichtDMO);
+
+            overzicht.subtaken.OrderByDescending(x => x.datetime);
+
+            return View(overzicht);
         }
 
         public IActionResult Privacy()

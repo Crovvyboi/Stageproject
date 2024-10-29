@@ -1,0 +1,38 @@
+﻿@model OverzichtModel
+@{
+}
+
+<div class="text-center">
+    <h1 class="display-4">Overzicht @Model.overzichtNaam details</h1>
+    <div>
+        <table class="table table-striped table-hover">
+            <tr scope="row">
+                <th>
+                    Overzicht
+                </th>
+                <td>
+                    @Model.overzichtNaam
+                </td>
+            </tr>
+            <tr scope="row">
+                <th>
+                    Laatste keer uitgevoerd
+                </th>
+                <td>
+                    @Model.subtaken[0].GetDateTimeString()
+                </td>
+            </tr>
+            <tr scope="row">
+                <th>
+                    Keren uitgevoerd
+                </th>
+                <td>
+                    @Model.GetKerenUitgevoerd()
+                </td>
+            </tr>
+
+
+        </table>
+
+    </div>
+</div>
