@@ -1,9 +1,12 @@
 ﻿@model OverzichtModel
 @{
 }
+<div>
+    <a asp-action="Overzichten">Terug naar overzichten</a>
+</div>
+<h1 class="display-4">Overzicht @Model.overzichtNaam details</h1>
 
 <div class="text-center">
-    <h1 class="display-4">Overzicht @Model.overzichtNaam details</h1>
     <div>
         <table class="table table-striped table-hover">
             <tr scope="row">
@@ -34,5 +37,96 @@
 
         </table>
 
+        <br />
+        <hr class="solid">
+        <br />
+
+        <table class="table table-striped table-hover">
+            <tr scope="row">
+                <th>
+                    Keren kolom toegevoegd
+                </th>
+                <td>
+                    @Model.GetKerenKolomToegevoegd()
+                </td>
+            </tr>
+            <tr scope="row">
+                <th>
+                    Keren kolom verwijderd
+                </th>
+                <td>
+                    @Model.GetKerenKolomVerwijderd()
+                </td>
+            </tr>
+            <tr scope="row">
+                <th>
+                    Totaal gevonden verschillen
+                </th>
+                <td>
+                    @Model.GetTotaalGevondenVerschillen()
+                </td>
+            </tr>
+        </table>
+
+        <br />
+        <hr class="solid">
+        <br />
+
+        @foreach (OverzichtListitem overzichtModel in Model.subtaken)
+        {
+            <div>
+                Uitgevoerd op: @overzichtModel.GetDateTimeString() <br />
+                Toegevoegde kolommen: @overzichtModel.subtaak.addedColumns <br />
+                Verwijderde kolommen: @overzichtModel.subtaak.removedColumns <br />
+            </div>
+
+            <table class="table table-striped table-hover">
+                <thead>
+                <th scope="col">
+                    Op entry ID
+                </th>
+                <th scope="col">
+                    Op kolom
+                </th>
+                <th scope="col">
+                    Waarde A
+                </th>
+                <th scope="col">
+                    
+                </th>
+                <th scope="col">
+                    Waarde B
+                </th>
+
+
+                </thead>
+
+                @foreach (DiffModel diff in overzichtModel.subtaak.foundDiffs)
+                {
+                    <tr>
+                        <th scope="row">
+                            @diff.onEntryId
+                        </th>
+                        <td>
+                            @diff.onColumn
+                        </td>
+                        <td>
+                            @diff.valueA
+                        </td>
+                        <td>
+                            ->
+                        </td>
+                        <td>
+                            @diff.valueB
+                        </td>
+
+                    </tr>
+                }
+            </table>
+
+            <br />
+            <hr class="solid">
+            <br />
+        }
     </div>
 </div>

@@ -35,6 +35,32 @@ namespace AnalyseApp_it._2.Models
             }
             return tot;
         }
+
+        public int GetKerenKolomToegevoegd()
+        {
+            int tot = 0;
+            foreach (OverzichtListitem subtaak in subtaken)
+            {
+                if (subtaak.subtaak.addedColumns != "n/a")
+                {
+                    tot++;
+                }
+            }
+            return tot;
+        }
+
+        public int GetKerenKolomVerwijderd()
+        {
+            int tot = 0;
+            foreach (OverzichtListitem subtaak in subtaken)
+            {
+                if (subtaak.subtaak.removedColumns != "n/a")
+                {
+                    tot++;
+                }
+            }
+            return tot;
+        }
     }
 
     public struct OverzichtListitem
