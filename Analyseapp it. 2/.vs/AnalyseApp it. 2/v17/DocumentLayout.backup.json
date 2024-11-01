@@ -3,6 +3,10 @@
   "WorkspaceRootPath": "G:\\Shule BS\\Stage\\Stageproject\\Analyseapp it. 2\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{A7833FEE-E01A-44C1-8540-A8F136344BB4}|AnalyseApp it. 2.csproj|g:\\shule bs\\stage\\stageproject\\analyseapp it. 2\\data\\dbhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A7833FEE-E01A-44C1-8540-A8F136344BB4}|AnalyseApp it. 2.csproj|solutionrelative:data\\dbhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{A7833FEE-E01A-44C1-8540-A8F136344BB4}|AnalyseApp it. 2.csproj|g:\\shule bs\\stage\\stageproject\\analyseapp it. 2\\views\\home\\overzichtdetails.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{A7833FEE-E01A-44C1-8540-A8F136344BB4}|AnalyseApp it. 2.csproj|solutionrelative:views\\home\\overzichtdetails.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
@@ -31,10 +35,6 @@
       "RelativeMoniker": "D:0:0:{A7833FEE-E01A-44C1-8540-A8F136344BB4}|AnalyseApp it. 2.csproj|solutionrelative:controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A7833FEE-E01A-44C1-8540-A8F136344BB4}|AnalyseApp it. 2.csproj|g:\\shule bs\\stage\\stageproject\\analyseapp it. 2\\data\\dbhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A7833FEE-E01A-44C1-8540-A8F136344BB4}|AnalyseApp it. 2.csproj|solutionrelative:data\\dbhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{A7833FEE-E01A-44C1-8540-A8F136344BB4}|AnalyseApp it. 2.csproj|g:\\shule bs\\stage\\stageproject\\analyseapp it. 2\\views\\home\\overzichten.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{A7833FEE-E01A-44C1-8540-A8F136344BB4}|AnalyseApp it. 2.csproj|solutionrelative:views\\home\\overzichten.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
@@ -54,8 +54,48 @@
       "DocumentGroups": [
         {
           "DockedWidth": 235,
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": 1,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "G:\\Shule BS\\Stage\\Stageproject\\Analyseapp it. 2\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "Controllers\\HomeController.cs",
+              "ToolTip": "G:\\Shule BS\\Stage\\Stageproject\\Analyseapp it. 2\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "Controllers\\HomeController.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAIAwwCAAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-25T12:10:39.234Z",
+              "IsPinned": true
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "DBHandler.cs",
+              "DocumentMoniker": "G:\\Shule BS\\Stage\\Stageproject\\Analyseapp it. 2\\Data\\DBHandler.cs",
+              "RelativeDocumentMoniker": "Data\\DBHandler.cs",
+              "ToolTip": "G:\\Shule BS\\Stage\\Stageproject\\Analyseapp it. 2\\Data\\DBHandler.cs",
+              "RelativeToolTip": "Data\\DBHandler.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAKkAAABgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-28T09:48:35.665Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "G:\\Shule BS\\Stage\\Stageproject\\Analyseapp it. 2\\Views\\Home\\Index.cshtml",
+              "RelativeDocumentMoniker": "Views\\Home\\Index.cshtml",
+              "ToolTip": "G:\\Shule BS\\Stage\\Stageproject\\Analyseapp it. 2\\Views\\Home\\Index.cshtml",
+              "RelativeToolTip": "Views\\Home\\Index.cshtml",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-10-28T08:52:36.315Z",
+              "IsPinned": true
+            },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{e1b7d1f8-9b3c-49b1-8f4f-bfc63a88835d}"
@@ -66,62 +106,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "HomeController.cs",
-              "DocumentMoniker": "G:\\Shule BS\\Stage\\Stageproject\\Analyseapp it. 2\\Controllers\\HomeController.cs",
-              "RelativeDocumentMoniker": "Controllers\\HomeController.cs",
-              "ToolTip": "G:\\Shule BS\\Stage\\Stageproject\\Analyseapp it. 2\\Controllers\\HomeController.cs",
-              "RelativeToolTip": "Controllers\\HomeController.cs",
-              "ViewState": "AgIAAAkAAAAAAAAAAIAwwCAAAAAMAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-25T12:10:39.234Z",
-              "IsPinned": true,
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "DBHandler.cs",
-              "DocumentMoniker": "G:\\Shule BS\\Stage\\Stageproject\\Analyseapp it. 2\\Data\\DBHandler.cs",
-              "RelativeDocumentMoniker": "Data\\DBHandler.cs",
-              "ToolTip": "G:\\Shule BS\\Stage\\Stageproject\\Analyseapp it. 2\\Data\\DBHandler.cs",
-              "RelativeToolTip": "Data\\DBHandler.cs",
-              "ViewState": "AgIAAE8AAAAAAAAAAAAQwOoAAAAIAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-28T09:48:35.665Z",
-              "IsPinned": true,
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "G:\\Shule BS\\Stage\\Stageproject\\Analyseapp it. 2\\Views\\Home\\Index.cshtml",
-              "RelativeDocumentMoniker": "Views\\Home\\Index.cshtml",
-              "ToolTip": "G:\\Shule BS\\Stage\\Stageproject\\Analyseapp it. 2\\Views\\Home\\Index.cshtml",
-              "RelativeToolTip": "Views\\Home\\Index.cshtml",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-10-28T08:52:36.315Z",
-              "IsPinned": true,
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "OverzichtDetails.cshtml",
               "DocumentMoniker": "G:\\Shule BS\\Stage\\Stageproject\\Analyseapp it. 2\\Views\\Home\\OverzichtDetails.cshtml",
               "RelativeDocumentMoniker": "Views\\Home\\OverzichtDetails.cshtml",
               "ToolTip": "G:\\Shule BS\\Stage\\Stageproject\\Analyseapp it. 2\\Views\\Home\\OverzichtDetails.cshtml",
               "RelativeToolTip": "Views\\Home\\OverzichtDetails.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAABAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAZAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2024-10-29T09:02:34.105Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "DiffModel.cs",
               "DocumentMoniker": "G:\\Shule BS\\Stage\\Stageproject\\Analyseapp it. 2\\Models\\DiffModel.cs",
               "RelativeDocumentMoniker": "Models\\DiffModel.cs",
@@ -129,12 +127,11 @@
               "RelativeToolTip": "Models\\DiffModel.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAWAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-28T09:18:56.254Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-28T09:18:56.254Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
               "Title": "SubtaakModel.cs",
               "DocumentMoniker": "G:\\Shule BS\\Stage\\Stageproject\\Analyseapp it. 2\\Models\\SubtaakModel.cs",
               "RelativeDocumentMoniker": "Models\\SubtaakModel.cs",
@@ -142,8 +139,7 @@
               "RelativeToolTip": "Models\\SubtaakModel.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAnAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-28T09:18:46.885Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-28T09:18:46.885Z"
             },
             {
               "$type": "Document",
@@ -155,8 +151,7 @@
               "RelativeToolTip": "Views\\Home\\Overzichten.cshtml",
               "ViewState": "AgIAAAkAAAAAAAAAAAAAABcAAABkAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-10-28T14:22:26.541Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-28T14:22:26.541Z"
             },
             {
               "$type": "Document",
@@ -172,7 +167,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "Details.cshtml",
               "DocumentMoniker": "G:\\Shule BS\\Stage\\Stageproject\\Analyseapp it. 2\\Views\\Home\\Details.cshtml",
               "RelativeDocumentMoniker": "Views\\Home\\Details.cshtml",
@@ -180,8 +175,7 @@
               "RelativeToolTip": "Views\\Home\\Details.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-10-28T10:21:24.299Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-28T10:21:24.299Z"
             },
             {
               "$type": "Document",
@@ -197,7 +191,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 6,
               "Title": "OverzichtModel.cs",
               "DocumentMoniker": "G:\\Shule BS\\Stage\\Stageproject\\Analyseapp it. 2\\Models\\OverzichtModel.cs",
               "RelativeDocumentMoniker": "Models\\OverzichtModel.cs",
@@ -205,8 +199,7 @@
               "RelativeToolTip": "Models\\OverzichtModel.cs",
               "ViewState": "AgIAACcAAAAAAAAAAAAYwDgAAAAyAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-28T14:38:51.817Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-28T14:38:51.817Z"
             }
           ]
         }

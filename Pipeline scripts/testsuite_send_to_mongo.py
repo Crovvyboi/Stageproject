@@ -9,7 +9,7 @@ def send_csv_to_mongo(dir_output, filename):
     json = add_metadata(json)
 
     # Replace the placeholder with your Atlas connection string
-    uri = "mongodb+srv://riksmolders:Mieper99-Mieper99@cluster0.z5tuv.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0"
+    uri = "mongodb+srv://202324_AD:mieper99@cluster0.hpcak9m.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0"
 
     # Create a MongoClient with a MongoClientOptions object to set the Stable API version
     client = MongoClient(uri)
@@ -18,14 +18,10 @@ def send_csv_to_mongo(dir_output, filename):
         client._connect()
         print("Connected!")
 
-        database = client["analyse_data"]
-        collection = database["taken"]
+        database = client["Stageproject"]
+        collection = database["Taken"]
         x = collection.insert_one(json)
         print(x)
-
-    except:
-        print("Something went wrong, but do not care")
-        client.close()
     finally:
         # Ensures that the client will close when you finish/error    
         client.close()

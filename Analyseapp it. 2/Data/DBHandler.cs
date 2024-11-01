@@ -13,13 +13,11 @@ namespace AnalyseApp_it._2.Data
 {
     public class DBHandler : IDBHandler
     {
-
+        private const string connectionUri = "mongodb+srv://202324_AD:mieper99@cluster0.hpcak9m.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0";
         public List<TaakDMO> GetAllTaken()
         {
             List<TaakDMO> taken = new List<TaakDMO>();
             
-            // Replace the placeholder with your Atlas connection string
-            const string connectionUri = "mongodb+srv://riksmolders:Mieper99-Mieper99@cluster0.z5tuv.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0";
             var settings = MongoClientSettings.FromConnectionString(connectionUri);
             // Sets the ServerApi field of the settings object to Stable API version 1
             settings.ServerApi = new ServerApi(ServerApiVersion.V1);
@@ -28,10 +26,10 @@ namespace AnalyseApp_it._2.Data
             // Sends a ping to confirm a successful connection
             try
             {
-                var result = client.GetDatabase("analyse_data").RunCommand<BsonDocument>(new BsonDocument("ping", 1));
+                var result = client.GetDatabase("Stageproject").RunCommand<BsonDocument>(new BsonDocument("ping", 1));
                 Console.WriteLine("Pinged your deployment. You successfully connected to MongoDB!");
 
-                var bson = client.GetDatabase("analyse_data").GetCollection<BsonDocument>("taken").Find(_ => true).ToList();
+                var bson = client.GetDatabase("Stageproject").GetCollection<BsonDocument>("Taken").Find(_ => true).ToList();
 
                 foreach (var item in bson)
                 {
@@ -89,8 +87,6 @@ namespace AnalyseApp_it._2.Data
 
         public TaakDMO GetTaakOnId(string taakID)
         {
-            // Replace the placeholder with your Atlas connection string
-            const string connectionUri = "mongodb+srv://riksmolders:Mieper99-Mieper99@cluster0.z5tuv.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0";
             var settings = MongoClientSettings.FromConnectionString(connectionUri);
             // Sets the ServerApi field of the settings object to Stable API version 1
             settings.ServerApi = new ServerApi(ServerApiVersion.V1);
@@ -100,11 +96,11 @@ namespace AnalyseApp_it._2.Data
 
             try
             {
-                var result = client.GetDatabase("analyse_data").RunCommand<BsonDocument>(new BsonDocument("ping", 1));
+                var result = client.GetDatabase("Stageproject").RunCommand<BsonDocument>(new BsonDocument("ping", 1));
                 Console.WriteLine("Pinged your deployment. You successfully connected to MongoDB!");
 
                 FilterDefinition<BsonDocument> filter = Builders<BsonDocument>.Filter.Eq("_id", ObjectId.Parse(taakID));
-                var bson = client.GetDatabase("analyse_data").GetCollection<BsonDocument>("taken").Find(filter).ToList();
+                var bson = client.GetDatabase("Stageproject").GetCollection<BsonDocument>("Taken").Find(filter).ToList();
 
                 foreach (var item in bson)
                 {
@@ -160,8 +156,6 @@ namespace AnalyseApp_it._2.Data
         {
             List<OverzichtDMO> overzichtDMOs = new List<OverzichtDMO>();
 
-            // Replace the placeholder with your Atlas connection string
-            const string connectionUri = "mongodb+srv://riksmolders:Mieper99-Mieper99@cluster0.z5tuv.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0";
             var settings = MongoClientSettings.FromConnectionString(connectionUri);
             // Sets the ServerApi field of the settings object to Stable API version 1
             settings.ServerApi = new ServerApi(ServerApiVersion.V1);
@@ -170,10 +164,10 @@ namespace AnalyseApp_it._2.Data
             // Sends a ping to confirm a successful connection
             try
             {
-                var result = client.GetDatabase("analyse_data").RunCommand<BsonDocument>(new BsonDocument("ping", 1));
+                var result = client.GetDatabase("Stageproject").RunCommand<BsonDocument>(new BsonDocument("ping", 1));
                 Console.WriteLine("Pinged your deployment. You successfully connected to MongoDB!");
 
-                var bson = client.GetDatabase("analyse_data").GetCollection<BsonDocument>("taken").Find(_ => true).ToList();
+                var bson = client.GetDatabase("Stageproject").GetCollection<BsonDocument>("Taken").Find(_ => true).ToList();
 
                 foreach (var item in bson)
                 {

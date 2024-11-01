@@ -245,9 +245,9 @@ def export_to_csv(det_file_content, dir_output):
 def find_differences():
     args = parser.parse_args()
 
-    dir_a = 'C:/Users/rik.smolders/Desktop/env-a-files'
-    dir_b = 'C:/Users/rik.smolders/Desktop/env-b-files'
-    dir_output = 'C:/Users/rik.smolders/Desktop/output_files'
+    dir_a = 'G:/Shule BS/Stage/env-a'
+    dir_b = 'G:/Shule BS/Stage/env-b'
+    dir_output = 'G:/Shule BS/Stage/output_dir'
     differences_found = False
 
     # Create export folder if not exists
